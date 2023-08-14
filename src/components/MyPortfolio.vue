@@ -103,13 +103,13 @@ defineProps<{
                 }]" />
             </div>
             <div class="divider"></div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center m-5">
                 <div>
                     TODO
                 </div>
             </div>
             <div class="divider"></div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center my-5">
                 <UContactForm :mail='data.email' />
             </div>
         </template>

@@ -17,6 +17,10 @@
         "placeholder": {
             "subject": "Sujet de votre message",
             "message": "Votre message"
+        },
+        "error": {
+            "title": "Les champs suivants sont obligatoires :",
+            "message": "Sujet et message"
         }
     },
     "links": {
