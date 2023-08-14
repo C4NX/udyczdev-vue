@@ -4,7 +4,8 @@
       <a :href="source.href" target="_blank" rel="noopener noreferrer">
         <v-icon :name="icon" fill="white" scale="1.5" />
       </a>
-      <p>Made with <span class="text-red-500">&hearts;</span> by Udycz Alexis (2023)</p>
+      <p>
+        {{ $t('footer.text') }}</p>
     </div>
     <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
       <a v-for="link in socials" :key="link.name" :href="link.href" target="_blank" rel="noopener noreferrer">

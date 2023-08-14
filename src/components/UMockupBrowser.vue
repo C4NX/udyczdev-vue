@@ -4,12 +4,15 @@
             <div class="input select-none">
                 {{ title }}
             </div>
+            <ULocaleSwitcher />
         </div>
         <slot />
     </div>
 </template>
 
 <script setup lang="ts">
+
+import ULocaleSwitcher from './ULocaleSwitcher.vue'
 
 defineProps({
     title: {

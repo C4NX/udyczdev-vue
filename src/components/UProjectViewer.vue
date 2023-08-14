@@ -12,11 +12,11 @@
                 <p>{{ project.description }}</p>
                 <div class="card-actions justify-end">
                     <a class="btn btn-primary" :href="project.source" target="_blank" rel="noopener noreferrer">
-                        Source
+                        {{ $t('button.source') }}
                     </a>
                     <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
                         :class="{ 'btn-disabled': !project.demo }">
-                        Demo
+                        {{ $t('button.demo') }}
                     </a>
                 </div>
             </div>

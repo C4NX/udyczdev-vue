@@ -1,28 +1,33 @@
 <template>
     <form class="flex flex-col p-5 gap-5 bg-base-100 w-2/3 rounded-box" @submit.prevent="() => mailTo(mail)">
-        <h3 class="text-2xl">Contact me</h3>
+        <h3 class="text-2xl">{{ $t("contact.title") }}</h3>
         <div class="form-control">
             <label class="input-group">
-                <span>Subject</span>
-                <input type="text" class="input input-bordered w-full" placeholder="Question about..." v-model="subject" />
+                <span>{{ $t("contact.subject") }}</span>
+                <input type="text" class="input input-bordered w-full" :placeholder="$t('contact.placeholder.subject')"
+                    v-model="subject" />
             </label>
         </div>
         <div class="form-control">
-            <textarea class="textarea textarea-primary" placeholder="Your message..." v-model="message"></textarea>
+            <textarea class="textarea textarea-primary" :placeholder="$t('contact.placeholder.message')"
+                v-model="message"></textarea>
         </div>
-        <button class="btn btn-primary" type="submit">Send (via mail)</button>
+        <button class="btn btn-primary" type="submit">{{ $t("contact.send") }}</button>
     </form>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const message = ref('')
 const subject = ref('')
 
+const { t } = useI18n();
+
 const mailTo = (email: string) => {
-    if(!message.value || !subject.value) {
-        return alert('Please fill all fields')
+    if (!message.value || !subject.value) {
+        return alert(t('contact.error'))
     }
     window.open(`mailto:${email}?subject=${subject.value}&body=${message.value}`)
 }

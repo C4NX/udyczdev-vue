@@ -3,7 +3,6 @@ import type { MeModel } from '@/models/Me';
 
 // import WindowFrameVue from './WindowFrame.vue';
 // import WorkTrace from './WorkTrace.vue';
-// import { useI18n } from 'vue-i18n/dist/vue-i18n.js';
 
 import USkillsViewer from './USkillsViewer.vue'
 import UContactForm from './UContactForm.vue';
@@ -15,8 +14,6 @@ defineProps<{
     data: MeModel
 }>();
 
-// const { t } = useI18n();
-
 </script>
 
 
@@ -25,13 +22,13 @@ defineProps<{
         <template #default>
             <div class="flex m-10 items-center">
                 <div class="flex flex-col gap-7">
-                    <h1 class="text-5xl text-center"> Hello, I'm 
+                    <h1 class="text-5xl text-center"> {{ $t("profile.title") }}
                         <span class="text-primary">
                             {{ data.firstName }} {{ data.lastName }}
                         </span>
                     </h1>
                     <h2 class="text-2xl text-center">
-                        Aspiring 
+                        {{ $t("profile.job") }}
                         <span class="text-secondary">
                             {{ data.job }}
                         </span>
@@ -39,30 +36,18 @@ defineProps<{
                     <div class="flex gap-10">
                         <div class="flex items-center justify-center gap-2">
                             <div class="avatar">
-                                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                                     <img :src="data.avatarUrl" alt="avatar" />
                                 </div>
                             </div>
                         </div>
                         <p class="text-justify">
-                            I'm a 19-year-old developer who's been passionate about computers since I was a kid, and I spend a
-                            lot of my
-                            free time working on projects of all kinds. I mainly program in PHP, JavaScript, TypeScript and C#.
-                            I also
-                            sometimes work in Python and Lua for tool or game development. After all, I'm passionate about video
-                            games
-                            and game modding. On a more personal note, I love listening to music while I work. I'm a big fan of
-                            «
-                            Vocaloid » and « Hyperpop » music, and sometimes I do a bit of music production. I'm currently
-                            studying for
-                            a Computer Science degree at the University of Reims Champagne-Ardenne, and my goal is to become a
-                            web
-                            developer in the various languages I master.
+                            {{ $t("profile.description") }}
                         </p>
                     </div>
                     <div class="flex justify-end">
                         <a class="btn btn-secondary" :href="data.cvUrl" target="_blank" rel="noopener noreferrer">
-                            My Curriculum Vitae 📄
+                            {{ $t('button.cv') }}
                         </a>
                     </div>
                 </div>
