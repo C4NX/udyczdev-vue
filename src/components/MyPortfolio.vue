@@ -9,6 +9,7 @@ import UContactForm from './UContactForm.vue';
 import ULinkMenu from './ULinkMenu.vue';
 import UMockupBrowser from './UMockupBrowser.vue';
 import UProjectViewer from './UProjectViewer.vue';
+import UWorkViewer from './UWorkViewer.vue';
 
 defineProps<{
     data: MeModel
@@ -41,19 +42,20 @@ defineProps<{
                                 </div>
                             </div>
                         </div>
-                        <p class="text-justify">
-                            {{ $t("profile.description") }}
-                        </p>
-                    </div>
-                    <div class="flex justify-end">
-                        <a class="btn btn-secondary" :href="data.cvUrl" target="_blank" rel="noopener noreferrer">
-                            {{ $t('button.cv') }}
-                        </a>
+                        <div class="flex flex-col gap-4">
+                            <p class="text-justify">
+                                {{ $t("profile.description") }}
+                            </p>
+                            <div class="flex gap-3 justify-between items-center">
+                                <ULinkMenu :entries="data.links" />
+                                <a class="btn btn-secondary" :href="data.cvUrl" target="_blank" rel="noopener noreferrer">
+                                    {{ $t('button.cv') }}
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="divider"></div>
-            <u-link-menu :entries="data.links" />
             <div class="divider"></div>
             <u-project-viewer :data="data.projects" />
             <div class="divider"></div>
@@ -104,9 +106,7 @@ defineProps<{
             </div>
             <div class="divider"></div>
             <div class="flex items-center justify-center m-5">
-                <div>
-                    TODO
-                </div>
+                <UWorkViewer :data="data.works" />
             </div>
             <div class="divider"></div>
             <div class="flex items-center justify-center my-5">
@@ -135,4 +135,5 @@ defineProps<{
     <WindowFrameVue title="Projects" />
     <WindowFrameVue title="Experiences">
     <WorkTrace :works="data.works" />
-</WindowFrameVue>--></template>
+</WindowFrameVue>-->
+</template>

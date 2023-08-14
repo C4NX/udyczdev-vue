@@ -1,5 +1,6 @@
 import type MenuLink from "./MenuLink";
 import type { Project } from "./Project";
+import type WorkCategory from "./WorkCategory";
 
 export interface MeModel {
     firstName: string;
@@ -9,21 +10,6 @@ export interface MeModel {
     cvUrl: string;
     job: string;
     links: MenuLink[];
-    works: MeWorkModel[];
+    works: WorkCategory[];
     projects: Project[];
-}
-
-export interface MeWorkModel {
-    title: string;
-    year: string;
-    company: string;
-    status: CompleteState;
-    url: string;
-    description: string;
-}
-
-export enum CompleteState {
-    NotStarted = 0,
-    InProgress = 1,
-    Completed = 2
 }

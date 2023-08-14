@@ -3,7 +3,7 @@
         <v-icon :name="toIcon(state)" scale="2" :fill="toColor(state)" class="m-1" />
         <span class="flex-1">{{ text }}</span>
     </div> -->
-    <div class="center relative inline-block select-none whitespace-nowrap rounded-l py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white hover:scale-110 transform transition-all duration-200"
+    <div class="center relative inline-block select-none whitespace-nowrap rounded-box py-2 px-3.5 align-baseline font-sans text-xs font-bold uppercase leading-none text-white hover:scale-110 transform transition-all duration-200"
         :style="{
             'background-color': toColor(state)
         }">
@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-import { CompleteState } from '@/data/CompleteState';
+import { CompleteState } from '@/models/Work';
 import { OhVueIcon } from 'oh-vue-icons';
 import type { PropType } from 'vue';
 

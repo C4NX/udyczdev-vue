@@ -8,7 +8,8 @@
     "button": {
         "cv": "MON CURRICULUM VITAE 📜",
         "source": "CODE SOURCE 🔍",
-        "demo": "DEMO 🎮"
+        "demo": "DEMO 🎮",
+        "visitwork": "VISITER LE SITE 🌐"
     },
     "contact": {
         "title": "CONTACTEZ-MOI 📧",
@@ -25,6 +26,13 @@
     },
     "links": {
         "title": "LIENS 🔗"
+    },
+    "works": {
+        "title": "MES EXPÉRIENCES PRO/SCOLAIRES 📚",
+        "sti2d": {
+            "description": "Baccalauréat STI2D, Option: SIN (Systèmes d'Information et Numérique)."
+        },
+        "select": "Veuillez sélectionner une expérience"
     },
     "skills": {
         "category": {
