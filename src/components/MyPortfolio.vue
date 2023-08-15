@@ -6,10 +6,10 @@ import type { MeModel } from '@/models/Me';
 
 import USkillsViewer from './USkillsViewer.vue'
 import UContactForm from './UContactForm.vue';
-import ULinkMenu from './ULinkMenu.vue';
 import UMockupBrowser from './UMockupBrowser.vue';
 import UProjectViewer from './UProjectViewer.vue';
 import UWorkViewer from './UWorkViewer.vue';
+import UProfile from './UProfile.vue';
 
 defineProps<{
     data: MeModel
@@ -21,7 +21,8 @@ defineProps<{
 <template>
     <UMockupBrowser :title="`Portfolio - ${data.firstName} ${data.lastName}`">
         <template #default>
-            <div class="flex m-10 items-center">
+            <UProfile :data="data" />
+            <!-- <div class="flex m-10 items-center">
                 <div class="flex flex-col gap-7">
                     <h1 class="text-5xl text-center"> {{ $t("profile.title") }}
                         <span class="text-primary">
@@ -55,7 +56,7 @@ defineProps<{
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="divider"></div>
             <u-project-viewer :data="data.projects" />
             <div class="divider"></div>

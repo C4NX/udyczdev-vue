@@ -14,21 +14,25 @@
         <p v-if="!selectedCategory">
           {{ $t('skills.select') }}
         </p>
-        <div class="flex flex-wrap gap-5" v-else>
-          <p v-if="!selectedCategory.skills.length">
-            {{ $t('skills.empty') }}
-          </p>
-          <div v-for="skill in selectedCategory.skills" v-bind:key="skill.id" class="avatar indicator">
-            <a :href="skill.href" target="_blank" rel="noopener noreferrer">
-              <span class="indicator-item indicator-bottom indicator-center badge badge-secondary">{{ skill.name ??
-                $t(`skills.name.${skill.id}`) }}</span>
-              <span v-if="skill.detail" class="indicator-item indicator-center badge badge-info">{{ skill.detail }}</span>
-              <div class="w-20 h-20 rounded-lg">
-                <img :src="skill.logo" />
-              </div>
-            </a>
+        <Transition enter-from-class="opacity-0" leave-to-class="opacity-0" enter-active-class="transition duration-300"
+          leave-active-class="transition duration-300" appear>
+          <div class="flex flex-wrap gap-5" v-if="selectedCategory">
+            <p v-if="!selectedCategory.skills.length">
+              {{ $t('skills.empty') }}
+            </p>
+            <div v-for="skill in selectedCategory.skills" v-bind:key="skill.id" class="avatar indicator">
+              <a :href="skill.href" target="_blank" rel="noopener noreferrer">
+                <span class="indicator-item indicator-bottom indicator-center badge badge-secondary">{{ skill.name ??
+                  $t(`skills.name.${skill.id}`) }}</span>
+                <span v-if="skill.detail" class="indicator-item indicator-center badge badge-info">{{ skill.detail
+                }}</span>
+                <div class="w-20 h-20 rounded-lg">
+                  <img :src="skill.logo" />
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
+        </Transition>
       </div>
     </div>
   </div>
