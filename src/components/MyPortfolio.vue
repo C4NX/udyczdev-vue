@@ -1,28 +1,47 @@
 <script setup lang="ts">
-import type { MeModel } from '@/models/Me';
+import type { MeModel } from '@/models/Me'
 
 // import WindowFrameVue from './WindowFrame.vue';
 // import WorkTrace from './WorkTrace.vue';
 
 import USkillsViewer from './USkillsViewer.vue'
-import UContactForm from './UContactForm.vue';
-import UMockupBrowser from './UMockupBrowser.vue';
-import UProjectViewer from './UProjectViewer.vue';
-import UWorkViewer from './UWorkViewer.vue';
-import UProfile from './UProfile.vue';
+import UContactForm from './UContactForm.vue'
+import UMockupBrowser from './UMockupBrowser.vue'
+import UProjectViewer from './UProjectViewer.vue'
+import UWorkViewer from './UWorkViewer.vue'
+import UProfile from './UProfile.vue'
 
 defineProps<{
-    data: MeModel
-}>();
-
+  data: MeModel
+}>()
 </script>
 
-
 <template>
-    <UMockupBrowser :title="`Portfolio - ${data.firstName} ${data.lastName}`">
-        <template #default>
-            <UProfile :data="data" />
-            <!-- <div class="flex m-10 items-center">
+  <UMockupBrowser :title="`Portfolio - ${data.firstName} ${data.lastName}`">
+    <template #default>
+      <div class="m-5">
+        <div class="alert alert-warning">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="stroke-current shrink-0 h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+            />
+          </svg>
+          <span
+            ><strong>Warning</strong>: This page is still under development, some information or
+            features may be missing.</span
+          >
+        </div>
+      </div>
+      <UProfile :data="data" />
+      <!-- <div class="flex m-10 items-center">
                 <div class="flex flex-col gap-7">
                     <h1 class="text-5xl text-center"> {{ $t("profile.title") }}
                         <span class="text-primary">
@@ -57,65 +76,70 @@ defineProps<{
                     </div>
                 </div>
             </div> -->
-            <div class="divider"></div>
-            <u-project-viewer :data="data.projects" />
-            <div class="divider"></div>
-            <div class="flex items-center justify-center">
-                <USkillsViewer :data="[{
-                    id: 'os',
-                    name: 'Operating Systems',
-                    icon: 'ri-windows-fill',
-                    skills: [
-                        {
-                            id: 'windows',
-                            name: 'Windows',
-                            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1200px-Windows_logo_-_2012.svg.png',
-                            href: 'https://www.microsoft.com/fr-fr/windows'
-                        },
-                        {
-                            id: 'linux',
-                            name: 'Linux',
-                            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png',
-                            href: 'https://www.linux.org/'
-                        }
-                    ]
-                }, {
-                    id: 'frameworks',
-                    name: 'Frameworks CSS',
-                    icon: 'ri-css3-fill',
-                    skills: [
-                        {
-                            id: 'tailwind',
-                            name: 'Tailwind CSS',
-                            logo: 'https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png',
-                            href: 'https://tailwindcss.com/'
-                        },
-                        {
-                            id: 'bootstrap',
-                            name: 'Bootstrap',
-                            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png',
-                            href: 'https://getbootstrap.com/'
-                        },
-                        {
-                            id: 'daisyui',
-                            name: 'DaisyUI',
-                            logo: 'https://daisyui.com/images/daisyui-logo/daisyui-logomark-1024-1024.png',
-                            href: 'https://daisyui.com/'
-                        }
-                    ]
-                }]" />
-            </div>
-            <div class="divider"></div>
-            <div class="flex items-center justify-center m-5">
-                <UWorkViewer :data="data.works" />
-            </div>
-            <div class="divider"></div>
-            <div class="flex items-center justify-center my-5">
-                <UContactForm :mail='data.email' />
-            </div>
-        </template>
-    </UMockupBrowser>
-    <!-- <WindowFrameVue :title="`Portfolio - ${data.firstName} ${data.lastName}`">
+      <div class="divider"></div>
+      <u-project-viewer :data="data.projects" />
+      <div class="divider"></div>
+      <div class="flex items-center justify-center">
+        <USkillsViewer
+          :data="[
+            {
+              id: 'os',
+              name: 'Operating Systems',
+              icon: 'ri-windows-fill',
+              skills: [
+                {
+                  id: 'windows',
+                  name: 'Windows',
+                  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1200px-Windows_logo_-_2012.svg.png',
+                  href: 'https://www.microsoft.com/fr-fr/windows'
+                },
+                {
+                  id: 'linux',
+                  name: 'Linux',
+                  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png',
+                  href: 'https://www.linux.org/'
+                }
+              ]
+            },
+            {
+              id: 'frameworks',
+              name: 'Frameworks CSS',
+              icon: 'ri-css3-fill',
+              skills: [
+                {
+                  id: 'tailwind',
+                  name: 'Tailwind CSS',
+                  logo: 'https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png',
+                  href: 'https://tailwindcss.com/'
+                },
+                {
+                  id: 'bootstrap',
+                  name: 'Bootstrap',
+                  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png',
+                  href: 'https://getbootstrap.com/'
+                },
+                {
+                  id: 'daisyui',
+                  name: 'DaisyUI',
+                  logo: 'https://daisyui.com/images/daisyui-logo/daisyui-logomark-1024-1024.png',
+                  href: 'https://daisyui.com/'
+                }
+              ]
+            }
+          ]"
+        />
+      </div>
+      <div class="divider"></div>
+      <div class="flex items-center justify-center m-5">
+        <UWorkViewer :data="data.works" />
+      </div>
+      <div class="divider"></div>
+      <div class="flex items-center justify-center my-5">
+        <UContactForm :mail="data.email" />
+      </div>
+    </template>
+  </UMockupBrowser>
+  <!-- <WindowFrameVue :title="`Portfolio - ${data.firstName} ${data.lastName}`">
         <div>
             <div class="alert alert-warning">
                 <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none"

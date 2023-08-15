@@ -11,22 +11,22 @@
       by Udycz Alexis (2023)
     </span>
   </footer> -->
-  <u-footer :source="{
-    name: 'GitHub',
-    href: 'https://github.com/C4NX/udyczdev-vue',
-    icon: 'ri-github-fill'
-  }" :socials="[
-  { name: 'Twitter', icon: 'ri-twitter-line', href: 'https://twitter.com/NXLEBG' }
-]" />
+  <u-footer
+    :source="{
+      name: 'GitHub',
+      href: 'https://github.com/C4NX/udyczdev-vue',
+      icon: 'ri-github-fill'
+    }"
+    :socials="[{ name: 'Twitter', icon: 'ri-twitter-line', href: 'https://twitter.com/NXLEBG' }]"
+  />
 </template>
 
 <script setup lang="ts">
 import Me from './data/Me'
 import 'floating-vue/dist/style.css'
 import './assets/main.css'
-import MyPortfolio from './components/MyPortfolio.vue';
-import UFooter from './components/UFooter.vue';
-
+import MyPortfolio from './components/MyPortfolio.vue'
+import UFooter from './components/UFooter.vue'
 </script>
 
 <style>

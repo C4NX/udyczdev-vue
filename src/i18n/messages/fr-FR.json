@@ -1,49 +1,49 @@
 {
-    "name": "Français",
-    "profile": {
-        "description": "Jeune développeur de 19 ans, passionné d'informatique depuis mon plus jeune âge, je consacre une grande partie de mon temps libre à réaliser des projets en tout genre. Je programme principalement en PHP, JavaScript, TypeScript et C#. Il m'arrive aussi de faire du Python ainsi que du Lua pour du développement sur des outils ou des jeux vidéo. Car justement, je suis passionné par le jeu vidéo ainsi que le modding de jeux vidéo. Plus personnellement, j'adore écouter de la musique quand je travaille. Je suis un grand fan de musique « Vocaloid » et « Hyperpop » et il m'arrive parfois de faire un peu de production musicale. Je suis actuellement étudiant en BUT Informatique à l'Université de Reims Champagne-Ardenne, et mon objectif est de devenir développeur web dans les différents langages que je maîtrise.",
-        "title": "Je suis",
-        "job": "Etudiant et Aspirant"
+  "name": "Français",
+  "profile": {
+    "description": "Jeune développeur de 19 ans, passionné d'informatique depuis mon plus jeune âge, je consacre une grande partie de mon temps libre à réaliser des projets en tout genre. Je programme principalement en PHP, JavaScript, TypeScript et C#. Il m'arrive aussi de faire du Python ainsi que du Lua pour du développement sur des outils ou des jeux vidéo. Car justement, je suis passionné par le jeu vidéo ainsi que le modding de jeux vidéo. Plus personnellement, j'adore écouter de la musique quand je travaille. Je suis un grand fan de musique « Vocaloid » et « Hyperpop » et il m'arrive parfois de faire un peu de production musicale. Je suis actuellement étudiant en BUT Informatique à l'Université de Reims Champagne-Ardenne, et mon objectif est de devenir développeur web dans les différents langages que je maîtrise.",
+    "title": "Je suis",
+    "job": "Etudiant et Aspirant"
+  },
+  "button": {
+    "cv": "MON CURRICULUM VITAE 📜",
+    "source": "CODE SOURCE 🔍",
+    "demo": "DEMO 🎮",
+    "visitwork": "VISITER LE SITE 🌐"
+  },
+  "contact": {
+    "title": "CONTACTEZ-MOI 📧",
+    "subject": "Sujet",
+    "send": "ENVOYER 📤",
+    "placeholder": {
+      "subject": "Sujet de votre message",
+      "message": "Votre message"
     },
-    "button": {
-        "cv": "MON CURRICULUM VITAE 📜",
-        "source": "CODE SOURCE 🔍",
-        "demo": "DEMO 🎮",
-        "visitwork": "VISITER LE SITE 🌐"
-    },
-    "contact": {
-        "title": "CONTACTEZ-MOI 📧",
-        "subject": "Sujet",
-        "send": "ENVOYER 📤",
-        "placeholder": {
-            "subject": "Sujet de votre message",
-            "message": "Votre message"
-        },
-        "error": {
-            "title": "Les champs suivants sont obligatoires :",
-            "message": "Sujet et message"
-        }
-    },
-    "links": {
-        "title": "LIENS 🔗"
-    },
-    "works": {
-        "title": "MES EXPÉRIENCES PRO/SCOLAIRES 📚",
-        "sti2d": {
-            "description": "Baccalauréat STI2D, Option: SIN (Systèmes d'Information et Numérique)."
-        },
-        "select": "Veuillez sélectionner une expérience"
-    },
-    "skills": {
-        "category": {
-            "os": "Systèmes d'exploitation",
-            "frameworks": "Frameworks CSS"
-        },
-        "title": "COMPÉTENCES 📚",
-        "select": "Sélectionnez une catégorie",
-        "empty": "Aucune compétence trouvée"
-    },
-    "footer": {
-        "text": "Made with ❤ by Udycz Alexis (2023)"
+    "error": {
+      "title": "Les champs suivants sont obligatoires :",
+      "message": "Sujet et message"
     }
+  },
+  "links": {
+    "title": "LIENS 🔗"
+  },
+  "works": {
+    "title": "MES EXPÉRIENCES PRO/SCOLAIRES 📚",
+    "sti2d": {
+      "description": "Baccalauréat STI2D, Option: SIN (Systèmes d'Information et Numérique)."
+    },
+    "select": "Veuillez sélectionner une expérience"
+  },
+  "skills": {
+    "category": {
+      "os": "Systèmes d'exploitation",
+      "frameworks": "Frameworks CSS"
+    },
+    "title": "COMPÉTENCES 📚",
+    "select": "Sélectionnez une catégorie",
+    "empty": "Aucune compétence trouvée"
+  },
+  "footer": {
+    "text": "Made with ❤ by Udycz Alexis (2023)"
+  }
 }
