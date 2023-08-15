@@ -77,60 +77,15 @@ defineProps<{
                 </div>
             </div> -->
       <div class="divider"></div>
-      <u-project-viewer :data="data.projects" />
+      <u-project-viewer :data="data.projects" toolbar />
       <div class="divider"></div>
       <div class="flex items-center justify-center">
         <USkillsViewer
-          :data="[
-            {
-              id: 'os',
-              name: 'Operating Systems',
-              icon: 'ri-windows-fill',
-              skills: [
-                {
-                  id: 'windows',
-                  name: 'Windows',
-                  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Windows_logo_-_2012.svg/1200px-Windows_logo_-_2012.svg.png',
-                  href: 'https://www.microsoft.com/fr-fr/windows'
-                },
-                {
-                  id: 'linux',
-                  name: 'Linux',
-                  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png',
-                  href: 'https://www.linux.org/'
-                }
-              ]
-            },
-            {
-              id: 'frameworks',
-              name: 'Frameworks CSS',
-              icon: 'ri-css3-fill',
-              skills: [
-                {
-                  id: 'tailwind',
-                  name: 'Tailwind CSS',
-                  logo: 'https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png',
-                  href: 'https://tailwindcss.com/'
-                },
-                {
-                  id: 'bootstrap',
-                  name: 'Bootstrap',
-                  logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png',
-                  href: 'https://getbootstrap.com/'
-                },
-                {
-                  id: 'daisyui',
-                  name: 'DaisyUI',
-                  logo: 'https://daisyui.com/images/daisyui-logo/daisyui-logomark-1024-1024.png',
-                  href: 'https://daisyui.com/'
-                }
-              ]
-            }
-          ]"
+          :data="data.skills"
         />
       </div>
       <div class="divider"></div>
-      <div class="flex items-center justify-center m-5">
+      <div class="flex items-center justify-center my-5">
         <UWorkViewer :data="data.works" />
       </div>
       <div class="divider"></div>

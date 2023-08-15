@@ -40,7 +40,7 @@
       "frameworks": "Frameworks CSS"
     },
     "title": "COMPÉTENCES 📚",
-    "select": "Sélectionnez une catégorie",
+    "select": "Veuillez sélectionnez une catégorie",
     "empty": "Aucune compétence trouvée"
   },
   "footer": {

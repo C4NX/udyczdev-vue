@@ -9,5 +9,13 @@ export default {
   theme: {
     extend: {},
   },
+  safelist: [
+    /* Badge is dynamic, so we need to whitelist all possible classes */
+    'badge-primary',
+    'badge-secondary',
+    'badge-accent',
+    'badge-neutral',
+    'badge-ghost',
+  ],
   plugins: [daisyui],
 }
