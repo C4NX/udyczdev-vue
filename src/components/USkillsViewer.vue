@@ -1,6 +1,6 @@
 <template>
   <div class="bg-base-200 rounded-box p-5 w-2/3 flex flex-col gap-5">
-    <h3 class="text-2xl">{{ $t('skills.title') }}</h3>
+    <h3 class="text-2xl font-bold">{{ $t('skills.title') }}</h3>
     <div class="flex gap-4 flex-col-reverse sm:flex-row">
       <ul class="menu">
         <li v-for="category in data" v-bind:key="category.id">

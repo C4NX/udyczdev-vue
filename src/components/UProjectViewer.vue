@@ -1,5 +1,8 @@
 <template>
   <div class="flex flex-col gap-6 p-5">
+    <h3 class="text-3xl font-bold text-center">
+      {{ $t('projects.title') }}
+    </h3>
     <div class="bg-base-200 p-5 rounded-box flex gap-2 items-center" v-if="toolbar">
       <span>
         {{ $t('projects.toolbar.tags') }}
@@ -42,7 +45,7 @@
 
 <script setup lang="ts">
 import { type Project, type ProjectTag, getProjectTagColor } from '@/models/Project'
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const props = defineProps({
   data: {
@@ -83,5 +86,10 @@ const toogleTag = (tag: ProjectTag | undefined) => {
 
   refreshProjects()
 }
+
+watch(() => props.data, () => {
+  projects.value = props.data
+  refreshProjects()
+})
 
 </script>

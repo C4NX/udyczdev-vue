@@ -14,7 +14,8 @@
   "projects": {
     "toolbar": {
       "tags": "Filtrer par tags :"
-    }
+    },
+    "title": "MES PROJETS 📚"
   },
   "contact": {
     "title": "CONTACTEZ-MOI 📧",
@@ -26,7 +27,7 @@
     },
     "error": {
       "title": "Les champs suivants sont obligatoires :",
-      "message": "Sujet et message"
+      "message": "« Sujet » et « Message »"
     }
   },
   "links": {

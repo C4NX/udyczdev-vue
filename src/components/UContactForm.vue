@@ -1,7 +1,7 @@
 <template>
   <dialog class="modal modal-bottom sm:modal-middle" ref="modalElement">
     <form method="dialog" class="modal-box">
-      <h3 class="font-bold text-lg">{{ $t('contact.error.title') }}</h3>
+      <h3 class="text-lg font-bold">{{ $t('contact.error.title') }}</h3>
       <p class="py-4">{{ $t(t('contact.error.message')) }}</p>
       <div class="modal-action">
         <button class="btn">Close</button>
@@ -12,7 +12,7 @@
     class="flex flex-col p-5 gap-5 bg-base-100 w-2/3 rounded-box"
     @submit.prevent="() => mailTo(mail)"
   >
-    <h3 class="text-2xl">{{ $t('contact.title') }}</h3>
+    <h3 class="text-2xl font-bold">{{ $t('contact.title') }}</h3>
     <div class="form-control">
       <label class="input-group">
         <span>{{ $t('contact.subject') }}</span>
