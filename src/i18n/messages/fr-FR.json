@@ -11,6 +11,11 @@
     "demo": "DEMO 🎮",
     "visitwork": "VISITER LE SITE 🌐"
   },
+  "projects": {
+    "toolbar": {
+      "tags": "Filtrer par tags :"
+    }
+  },
   "contact": {
     "title": "CONTACTEZ-MOI 📧",
     "subject": "Sujet",

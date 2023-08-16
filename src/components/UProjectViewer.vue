@@ -1,37 +1,39 @@
 <template>
-  <div class="bg-base-200 w-full p-5 rounded-box flex gap-2 items-center" v-if="toolbar">
-    <span>
-      Tags
-    </span>
-    <div class="flex flex-1 gap-2 flex-wrap">
-      <button v-for="tag in data.flatMap(x => x.tags).filter(x => x)!" v-bind:key="tag?.title"
-        :class="['badge', getProjectTagColor(tag!.color)]" @click="toogleTag(tag)">
-        <v-icon :name="`ri-checkbox-${isTagSelected(tag!) ? 'circle-fill' : 'blank-circle-fill'}`"></v-icon>
-        {{ tag!.title }}</button>
+  <div class="flex flex-col gap-6 p-5">
+    <div class="bg-base-200 p-5 rounded-box flex gap-2 items-center" v-if="toolbar">
+      <span>
+        {{ $t('projects.toolbar.tags') }}
+      </span>
+      <div class="flex flex-1 gap-2 flex-wrap">
+        <button v-for="tag in data.flatMap(x => x.tags).filter(x => x)!" v-bind:key="tag?.title"
+          :class="['badge', getProjectTagColor(tag!.color)]" @click="toogleTag(tag)">
+          <v-icon :name="`ri-checkbox-${isTagSelected(tag!) ? 'circle-fill' : 'blank-circle-fill'}`"></v-icon>
+          {{ tag!.title }}</button>
+      </div>
     </div>
-  </div>
-  <div class="flex flex-wrap justify-center gap-10 pb-5">
-    <div v-for="project in projects" v-bind:key="project.id" class="card card-compact w-80 bg-base-100 shadow-xl">
-      <figure v-if="project.coverUrl">
-        <img :src="project.coverUrl" :alt="project.title" />
-      </figure>
-      <div class="card-body">
-        <div class="flex justify-evenly">
-          <div v-for="tag in project.tags" v-bind:key="tag.title" :class="['badge', getProjectTagColor(tag.color)]">{{
-            tag.title }}</div>
-        </div>
-        <h2 class="card-title">
-          {{ project.title }}
-        </h2>
-        <p>{{ $t(`projects.${project.id}.description`) }}</p>
-        <div class="card-actions justify-end">
-          <a class="btn btn-primary" :href="project.source" target="_blank" rel="noopener noreferrer">
-            {{ $t('button.source') }}
-          </a>
-          <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
-            :class="{ 'btn-disabled': !project.demo }">
-            {{ $t('button.demo') }}
-          </a>
+    <div class="flex flex-wrap justify-center gap-10 pb-5">
+      <div v-for="project in projects" v-bind:key="project.id" class="card card-compact w-80 bg-base-100 shadow-xl">
+        <figure v-if="project.coverUrl">
+          <img :src="project.coverUrl" :alt="project.title" />
+        </figure>
+        <div class="card-body">
+          <div class="flex justify-evenly">
+            <div v-for="tag in project.tags" v-bind:key="tag.title" :class="['badge', getProjectTagColor(tag.color)]">{{
+              tag.title }}</div>
+          </div>
+          <h2 class="card-title">
+            {{ project.title }}
+          </h2>
+          <p>{{ $t(`projects.${project.id}.description`) }}</p>
+          <div class="card-actions justify-end">
+            <a class="btn btn-primary" :href="project.source" target="_blank" rel="noopener noreferrer">
+              {{ $t('button.source') }}
+            </a>
+            <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
+              :class="{ 'btn-disabled': !project.demo }">
+              {{ $t('button.demo') }}
+            </a>
+          </div>
         </div>
       </div>
     </div>
