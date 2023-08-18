@@ -323,7 +323,7 @@ const Me: MeModel = {
           company: 'Université de Reims Champagne-Ardenne',
           status: CompleteState.InProgress,
           bannerUrl: 'https://www.iut-rcc.fr/media-images/23796/vueaerienne-iut.jpg',
-          url: 'https://iut-rcc.univ-reims.fr'
+          url: 'https://www.iut-rcc.fr/'
         },
         {
           id: 'stagemarne',
