@@ -186,6 +186,14 @@ const skill_unity = {
   href: 'https://unity.com/'
 }
 
+import logo_sqldeveloper from '../assets/logos/sqldev.svg'
+const skill_sqldeveloper = {
+  id: 'sqldeveloper',
+  name: 'SQL Developer',
+  logo: logo_sqldeveloper,
+  href: 'https://www.oracle.com/fr/database/technologies/appdev/sqldeveloper-landing.html'
+}
+
 
 const Me: MeModel = {
   firstName: 'Alexis',
@@ -235,6 +243,7 @@ const Me: MeModel = {
         skill_git,
         skill_github,
         skill_gitlab,
+        skill_sqldeveloper,
         skill_docker,
         skill_nginx
       ]
