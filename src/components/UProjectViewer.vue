@@ -8,10 +8,10 @@
         {{ $t('projects.toolbar.tags') }}
       </span>
       <div class="flex flex-1 gap-2 flex-wrap">
-        <button v-for="tag in data.flatMap(x => x.tags).filter(x => x)!" v-bind:key="tag?.title"
-          :class="['badge', getProjectTagColor(tag!.color)]" @click="toogleTag(tag)">
-          <v-icon :name="`ri-checkbox-${isTagSelected(tag!) ? 'circle-fill' : 'blank-circle-fill'}`"></v-icon>
-          {{ tag!.title }}</button>
+        <button v-for="tag in getAllTags()" v-bind:key="tag.title"
+          :class="['badge', getProjectTagColor(tag.color)]" @click="toogleTag(tag)">
+          <v-icon :name="`ri-checkbox-${isTagSelected(tag) ? 'circle-fill' : 'blank-circle-fill'}`"></v-icon>
+          {{ tag.title }}</button>
       </div>
     </div>
     <div class="flex flex-wrap justify-center gap-10 pb-5">
@@ -29,7 +29,7 @@
           </h2>
           <p>{{ $t(`projects.${project.id}.description`) }}</p>
           <div class="card-actions justify-end">
-            <a class="btn btn-primary" :href="project.source" target="_blank" rel="noopener noreferrer">
+            <a class="btn btn-primary" :class="{ 'btn-disabled': !project.source }" :href="project.source" target="_blank" rel="noopener noreferrer">
               {{ $t('button.source') }}
             </a>
             <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
@@ -60,6 +60,22 @@ const props = defineProps({
 
 const toolbar_tags = ref<ProjectTag[]>([])
 const projects = ref<Project[]>(props.data)
+
+const getAllTags = () => {
+  const allTags = new Set<ProjectTag>();
+  
+  props.data.forEach(item => {
+    if (Array.isArray(item.tags)) {
+      item.tags.forEach(tag => {
+        if (tag) {
+          allTags.add(tag);
+        }
+      });
+    }
+  });
+
+  return Array.from(allTags);
+}
 
 const isTagSelected = (tag: ProjectTag) => {
   return toolbar_tags.value?.map(x => x.id).includes(tag?.id)

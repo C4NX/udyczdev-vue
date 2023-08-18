@@ -6,7 +6,7 @@ type MessageSchema = typeof enUS
 
 export default createI18n<[MessageSchema], 'en-US' | 'fr-FR'>({
   locale: 'fr-FR',
-  fallbackLocale: 'en-US',
+  fallbackLocale: 'fr-FR',
   allowComposition: true,
   messages: {
     'fr-FR': frFR,

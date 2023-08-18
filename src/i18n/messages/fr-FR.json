@@ -15,6 +15,15 @@
     "toolbar": {
       "tags": "Filtrer par tags :"
     },
+    "portfolio": {
+      "description": "Site web de présentation de mes projets et de mes compétences (celui que vous visitez actuellement)."
+    },
+    "blog": {
+      "description": "Blog personnel, où je partage mes expériences et mes découvertes. Il fonctionne avec GoHugo et est hébergé sur GitHub Pages."
+    },
+    "outerwild-coop": {
+      "description": "Mod multijoueur pour Outer Wilds, permettant de jouer à plusieurs dans le même univers (il n'est pas très avancé et est aujourd'hui discontinué)."
+    },
     "title": "MES PROJETS 📚"
   },
   "contact": {
@@ -38,12 +47,22 @@
     "sti2d": {
       "description": "Baccalauréat STI2D, Option: SIN (Systèmes d'Information et Numérique)."
     },
+    "butinfo": {
+      "description": "BUT Informatique, Université de Reims Champagne-Ardenne."
+    },
+    "stagemarne": {
+      "description": "Stage au sein du service informatique du Département de la Marne. J'ai travaillé sur le développement d'une application web API First Symfony et React (de la conception aux tests). Cette application a pour but de mettre en place un système de gestion et de suivi des schémas départementaux au sein du département de la Marne."
+    },
     "select": "Veuillez sélectionner une expérience"
   },
   "skills": {
     "category": {
       "os": "Systèmes d'exploitation",
-      "frameworks": "Frameworks CSS"
+      "frameworks-css": "Frameworks CSS",
+      "frameworks-front": "Frameworks Front-End",
+      "frameworks-back": "Frameworks Back-End",
+      "software": "Logiciels",
+      "game-engines": "Moteurs de jeu"
     },
     "title": "COMPÉTENCES 📚",
     "select": "Veuillez sélectionnez une catégorie",
