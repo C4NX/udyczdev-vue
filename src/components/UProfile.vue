@@ -20,9 +20,7 @@
               <img :src="data.avatarUrl" alt="avatar" />
             </div>
           </div>
-          <p class="text-justify">
-            {{ $t('profile.description') }}
-          </p>
+          <div v-html="sanitize(marked($t('profile.description'), {breaks: true}))" class="text-align"/>
         </div>
       </div>
       <div class="flex gap-3 justify-between items-center">
@@ -40,6 +38,9 @@ import type { MeModel } from '@/models/Me'
 import type { PropType } from 'vue'
 
 import ULinkMenu from './ULinkMenu.vue'
+
+import { marked } from 'marked'
+import sanitize from 'sanitize-html'
 
 defineProps({
   data: {

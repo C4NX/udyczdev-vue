@@ -1,5 +1,6 @@
 export default interface Work {
   id: string
+  titleSmall?: string
   title: string
   year: string
   company: string

@@ -1,7 +1,7 @@
 {
   "name": "Français",
   "profile": {
-    "description": "Jeune développeur de 19 ans, passionné d'informatique depuis mon plus jeune âge, je consacre une grande partie de mon temps libre à réaliser des projets en tout genre. Je programme principalement en PHP, JavaScript, TypeScript et C#. Il m'arrive aussi de faire du Python ainsi que du Lua pour du développement sur des outils ou des jeux vidéo. Car justement, je suis passionné par le jeu vidéo ainsi que le modding de jeux vidéo. Plus personnellement, j'adore écouter de la musique quand je travaille. Je suis un grand fan de musique « Vocaloid » et « Hyperpop » et il m'arrive parfois de faire un peu de production musicale. Je suis actuellement étudiant en BUT Informatique à l'Université de Reims Champagne-Ardenne, et mon objectif est de devenir développeur web dans les différents langages que je maîtrise.",
+    "description": "Jeune développeur **web full stack** de **19 ans**, je suis passionné d'informatique depuis mon plus jeune âge. Je consacre une grande partie de mon temps libre à la réalisation de projets en tout genre, notamment en **PHP, JavaScript, TypeScript et C#**. J'ai également une bonne expérience **en Python et en Lua**, que j'utilise pour des jeux vidéo ou pour du modding.\nÀ titre personnel, j'adore écouter de la musique quand je travaille et j'ai quelques projets avec des Raspberry Pi 4. Je suis également passionné de réalité virtuelle.\nJe suis actuellement étudiant en BUT Informatique à l'Université de Reims Champagne-Ardenne. Mon objectif est de devenir développeur web full stack expérimenté et de travailler sur des projets stimulants.",
     "title": "Je suis",
     "job": "Etudiant et Aspirant"
   },
@@ -48,10 +48,10 @@
       "description": "Baccalauréat STI2D, Option: SIN (Systèmes d'Information et Numérique)."
     },
     "butinfo": {
-      "description": "BUT Informatique, Université de Reims Champagne-Ardenne."
+      "description": "Parcours : Réalisation d'applications : concepetions, développement, validation [Option: C#]"
     },
     "stagemarne": {
-      "description": "Stage au sein du service informatique du Département de la Marne. J'ai travaillé sur le développement d'une application web API First Symfony et React (de la conception aux tests). Cette application a pour but de mettre en place un système de gestion et de suivi des schémas départementaux au sein du département de la Marne."
+      "description": "Stage au sein du service informatique du Département de la Marne. J'ai travaillé sur le développement d'une application web API-First Symfony et React (de la conception aux tests). Le but de cette application est d'améliorer le suivi des schémas départementaux au sein du département de la Marne et de créer un outil permettant de les gérer."
     },
     "select": "Veuillez sélectionner une expérience"
   },
@@ -62,7 +62,8 @@
       "frameworks-front": "Frameworks Front-End",
       "frameworks-back": "Frameworks Back-End",
       "software": "Logiciels",
-      "game-engines": "Moteurs de jeu"
+      "game-engines": "Moteurs de jeu",
+      "databases": "Bases de données"
     },
     "title": "COMPÉTENCES 📚",
     "select": "Veuillez sélectionnez une catégorie",

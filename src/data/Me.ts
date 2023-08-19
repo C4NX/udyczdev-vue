@@ -194,6 +194,29 @@ const skill_sqldeveloper = {
   href: 'https://www.oracle.com/fr/database/technologies/appdev/sqldeveloper-landing.html'
 }
 
+import logo_mongodb from '../assets/logos/mongodb.png'
+const skill_mongodb = {
+  id: 'mongodb',
+  name: 'MongoDB',
+  logo: logo_mongodb,
+  href: 'https://www.mongodb.com/'
+}
+
+import logo_oracle from '../assets/logos/oracle.png'
+const skill_oracledb = {
+  id: 'oracledb',
+  name: 'Oracle DB',
+  logo: logo_oracle,
+  href: 'https://www.oracle.com/fr/database/'
+}
+
+import logo_mariadb from '../assets/logos/mariadb.jpeg'
+const skill_mariadb = {
+  id: 'mariadb',
+  name: 'MariaDB',
+  logo: logo_mariadb,
+  href: 'https://mariadb.org/'
+}
 
 const Me: MeModel = {
   firstName: 'Alexis',
@@ -246,6 +269,16 @@ const Me: MeModel = {
         skill_sqldeveloper,
         skill_docker,
         skill_nginx
+      ]
+    },
+    {
+      id: 'databases',
+      name: 'Databases',
+      icon: 'ri-database-2-fill',
+      skills: [
+        skill_oracledb,
+        skill_mariadb,
+        skill_mongodb
       ]
     },
     {
@@ -313,7 +346,8 @@ const Me: MeModel = {
       works: [
         {
           id: 'sti2d',
-          title: 'STI2D',
+          titleSmall: 'BAC STI2D',
+          title: 'Bacalauréat Technologique STI2D',
           year: '2018 - 2021',
           company: 'Lycée Jules Verne - Château-Thierry',
           bannerUrl: 'https://www.lpo-julesverne.fr/images/home_dir.jpg',
@@ -336,7 +370,8 @@ const Me: MeModel = {
         },
         {
           id: 'stagemarne',
-          title: 'Stage Dep. Marne',
+          title: 'Stage Département de la Marne',
+          titleSmall: 'Stage Dep. Marne',
           year: '8 semaines - 2023',
           company: 'Département de la Marne - Châlons-en-Champagne',
           status: CompleteState.Completed,
