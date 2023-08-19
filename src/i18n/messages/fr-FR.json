@@ -1,0 +1,75 @@
+{
+  "name": "Français",
+  "profile": {
+    "description": "Jeune développeur **web full stack** de **19 ans**, je suis passionné d'informatique depuis mon plus jeune âge. Je consacre une grande partie de mon temps libre à la réalisation de projets en tout genre, notamment en **PHP, JavaScript, TypeScript et C#**. J'ai également une bonne expérience **en Python et en Lua**, que j'utilise pour des jeux vidéo ou pour du modding.\nÀ titre personnel, j'adore écouter de la musique quand je travaille et j'ai quelques projets avec des Raspberry Pi 4. Je suis également passionné de réalité virtuelle.\nJe suis actuellement étudiant en BUT Informatique à l'Université de Reims Champagne-Ardenne. Mon objectif est de devenir développeur web full stack expérimenté et de travailler sur des projets stimulants.",
+    "title": "Je suis",
+    "job": "Etudiant et Aspirant"
+  },
+  "button": {
+    "cv": "MON CURRICULUM VITAE 📜",
+    "source": "CODE SOURCE 🔍",
+    "demo": "DEMO 🎮",
+    "visitwork": "VISITER LE SITE 🌐"
+  },
+  "projects": {
+    "toolbar": {
+      "tags": "Filtrer par tags :"
+    },
+    "portfolio": {
+      "description": "Site web de présentation de mes projets et de mes compétences (celui que vous visitez actuellement)."
+    },
+    "blog": {
+      "description": "Blog personnel, où je partage mes expériences et mes découvertes. Il fonctionne avec GoHugo et est hébergé sur GitHub Pages."
+    },
+    "outerwild-coop": {
+      "description": "Mod multijoueur pour Outer Wilds, permettant de jouer à plusieurs dans le même univers (il n'est pas très avancé et est aujourd'hui discontinué)."
+    },
+    "title": "MES PROJETS 📚"
+  },
+  "contact": {
+    "title": "CONTACTEZ-MOI 📧",
+    "subject": "Sujet",
+    "send": "ENVOYER 📤",
+    "placeholder": {
+      "subject": "Sujet de votre message",
+      "message": "Votre message"
+    },
+    "error": {
+      "title": "Les champs suivants sont obligatoires :",
+      "message": "« Sujet » et « Message »"
+    }
+  },
+  "links": {
+    "title": "LIENS 🔗"
+  },
+  "works": {
+    "title": "MES EXPÉRIENCES PRO/SCOLAIRES 📚",
+    "sti2d": {
+      "description": "Baccalauréat STI2D, Option: SIN (Systèmes d'Information et Numérique)."
+    },
+    "butinfo": {
+      "description": "Parcours : Réalisation d'applications : concepetions, développement, validation [Option: C#]"
+    },
+    "stagemarne": {
+      "description": "Stage au sein du service informatique du Département de la Marne. J'ai travaillé sur le développement d'une application web API-First Symfony et React (de la conception aux tests). Le but de cette application est d'améliorer le suivi des schémas départementaux au sein du département de la Marne et de créer un outil permettant de les gérer."
+    },
+    "select": "Veuillez sélectionner une expérience"
+  },
+  "skills": {
+    "category": {
+      "os": "Systèmes d'exploitation",
+      "frameworks-css": "Frameworks CSS",
+      "frameworks-front": "Frameworks Front-End",
+      "frameworks-back": "Frameworks Back-End",
+      "software": "Logiciels",
+      "game-engines": "Moteurs de jeu",
+      "databases": "Bases de données"
+    },
+    "title": "COMPÉTENCES 📚",
+    "select": "Veuillez sélectionnez une catégorie",
+    "empty": "Aucune compétence trouvée"
+  },
+  "footer": {
+    "text": "Made with ❤ by Udycz Alexis (2023)"
+  }
+}
