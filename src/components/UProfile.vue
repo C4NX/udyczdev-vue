@@ -14,7 +14,7 @@
     </div>
     <div class="flex flex-col gap-5">
       <div class="flex gap-10">
-        <div class="flex items-center justify-center gap-10">
+        <div class="flex items-center justify-center gap-10 flex-col sm:flex-row">
           <div class="avatar p-2">
             <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
               <img :src="data.avatarUrl" alt="avatar" />
@@ -23,7 +23,7 @@
           <div v-html="sanitize(marked($t('profile.description'), {breaks: true}))" class="text-align"/>
         </div>
       </div>
-      <div class="flex gap-3 justify-between items-center">
+      <div class="flex gap-3 justify-between items-center flex-col sm:flex-row">
         <ULinkMenu :entries="data.links" />
         <a class="btn btn-secondary" :href="data.cvUrl" target="_blank" rel="noopener noreferrer">
           {{ $t('button.cv') }}
