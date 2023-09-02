@@ -17,7 +17,7 @@
       href: 'https://github.com/C4NX/udyczdev-vue',
       icon: 'ri-github-fill'
     }"
-    :socials="[{ name: 'Twitter', icon: 'ri-twitter-line', href: 'https://twitter.com/NXLEBG' }]"
+    :socials="[{ name: 'Twitter', icon: 'ri-twitter-line', href: 'https://twitter.com/UdyczAlexis' }]"
   />
 </template>
 
