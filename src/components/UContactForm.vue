@@ -9,7 +9,7 @@
     </form>
   </dialog>
   <form
-    class="flex flex-col p-5 gap-5 bg-base-100 w-2/3 rounded-box"
+    class="flex flex-col p-5 gap-5 bg-base-100 w-4/5 sm:w-2/3 rounded-box"
     @submit.prevent="() => mailTo(mail)"
   >
     <h3 class="text-2xl font-bold">{{ $t('contact.title') }}</h3>

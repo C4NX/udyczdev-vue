@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-base-200 rounded-box p-5 w-2/3 flex flex-col gap-5">
+  <div class="bg-base-200 rounded-box p-5 w-4/5 sm:w-2/3 flex flex-col gap-5">
     <h3 class="text-2xl font-bold">{{ $t('works.title') }}</h3>
-    <div class="flex gap-2">
+    <div class="flex flex-col sm:flex-row gap-2">
       <ul class="menu bg-base-200 w-56 rounded-box">
         <li v-for="category in data" v-bind:key="category.title">
           <h2 class="menu-title">{{ category.title }}</h2>
@@ -12,16 +12,16 @@
           </ul>
         </li>
       </ul>
-      <div class="border-l border-primary p-5 flex flex-col gap-5 flex-1" v-if="selectedWork">
+      <div class="border-t sm:border-l sm:border-t-0 border-primary p-5 flex flex-col gap-5 flex-1" v-if="selectedWork">
         <img v-if="selectedWork.bannerUrl" :src="selectedWork.bannerUrl" alt="work"
-          class="rounded-box w-auto h-60 object-cover" />
+          class="rounded-box w-auto h-32 sm:h-60 object-cover" />
         <h4 class="text-center text-2xl font-bold">
           {{ selectedWork.title }} ({{ selectedWork.year }})
         </h4>
         <div v-html="marked($t(`works.${selectedWork.id}.description`))" class="text-justify" />
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center flex-col-reverse gap-4 sm:flex-row sm:gap-0">
           <complete-status-chip :state="selectedWork.status" />
-          <small class="text-end">{{ selectedWork.company }}</small>
+          <small class="text-center sm:text-end">{{ selectedWork.company }}</small>
         </div>
         <a class="btn btn-primary" :href="selectedWork.url" target="_blank" rel="noopener noreferrer">
           {{ $t('button.visitwork') }}

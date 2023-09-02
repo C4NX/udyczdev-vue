@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-base-200 rounded-box p-5 w-2/3 flex flex-col gap-5">
+  <div class="bg-base-200 rounded-box p-5 w-4/5 sm:w-2/3 flex flex-col gap-5">
     <h3 class="text-2xl font-bold">{{ $t('skills.title') }}</h3>
-    <div class="flex gap-4 flex-col-reverse sm:flex-row">
+    <div class="flex gap-4 flex-col sm:flex-row">
       <ul class="menu">
         <li v-for="category in data" v-bind:key="category.id">
           <a @click.prevent="selectedCategory = category">
