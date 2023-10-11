@@ -20,7 +20,7 @@
               <img :src="data.avatarUrl" alt="avatar" />
             </div>
           </div>
-          <div v-html="sanitize(marked($t('profile.description'), {breaks: true}))" class="text-align"/>
+          <MarkdownText t="profile.description" />
         </div>
       </div>
       <div class="flex gap-3 justify-between items-center flex-col sm:flex-row">
@@ -39,8 +39,7 @@ import type { PropType } from 'vue'
 
 import ULinkMenu from './ULinkMenu.vue'
 
-import { marked } from 'marked'
-import sanitize from 'sanitize-html'
+import MarkdownText from '@/components/MarkdownText.vue'
 
 defineProps({
   data: {
