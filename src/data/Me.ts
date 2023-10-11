@@ -31,7 +31,7 @@ import {
   skill_windows, 
   skill_linux 
 } from './Skills'
-import { tag_javascript_typescript, tag_gohugo, tag_csharp } from './Tags'
+import { tag_javascript_typescript, tag_gohugo, tag_csharp, tag_devops } from './Tags'
 
 const Me: MeModel = {
   firstName: 'Alexis',
@@ -140,6 +140,11 @@ const Me: MeModel = {
       demo: 'https://udycz.dev',
       tags: [tag_javascript_typescript]
     },
+    /* {
+      id: "homelab",
+      title: "HomeLab",
+      tags: [tag_devops],
+    }, */
     {
       id: 'blog',
       title: 'Blog',
