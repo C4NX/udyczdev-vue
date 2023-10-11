@@ -18,4 +18,5 @@ declare global {
 }
 window.searchIcons = (name: string) => Ri.filter((x) => x.name.includes(name)).map((x) => x.name)
 
+
 createApp(App).use(i18n).component('v-icon', OhVueIcon).use(FloatingVue).mount('#app')

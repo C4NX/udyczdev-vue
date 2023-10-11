@@ -18,7 +18,7 @@
         <h4 class="text-center text-2xl font-bold">
           {{ selectedWork.title }} ({{ selectedWork.year }})
         </h4>
-        <div v-html="marked($t(`works.${selectedWork.id}.description`))" class="text-justify" />
+        <MarkdownText :t="`works.${selectedWork.id}.description`" />
         <div class="flex justify-between items-center flex-col-reverse gap-4 sm:flex-row sm:gap-0">
           <complete-status-chip :state="selectedWork.status" />
           <small class="text-center sm:text-end">{{ selectedWork.company }}</small>
@@ -40,7 +40,7 @@ import type WorkCategory from '@/models/WorkCategory'
 import { ref } from 'vue'
 import CompleteStatusChip from './CompleteStatusChip.vue'
 
-import { marked } from 'marked'
+import MarkdownText from './MarkdownText.vue'
 
 const selectedWork = ref<Work | undefined>(undefined)
 
