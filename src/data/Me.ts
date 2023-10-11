@@ -154,7 +154,7 @@ const Me: MeModel = {
     },
     {
       id: 'outerwild-coop',
-      title: 'Outer Wilds Coop (Mod)',
+      title: 'Outer Wilds Coop',
       coverUrl: OuterWildsCoopCoverPath,
       source: 'https://github.com/C4NX/OuterWildsCoop',
       tags: [tag_csharp]

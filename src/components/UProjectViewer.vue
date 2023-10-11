@@ -89,13 +89,15 @@ watch(() => props.data, () => {
           <img :src="project.coverUrl" :alt="project.title" />
         </figure>
         <div class="card-body">
-          <div class="flex justify-evenly">
-            <div v-for="tag in project.tags" v-bind:key="tag.title" class="badge badge-accent">{{
-              tag.title }}</div>
+          <div class="flex items-center gap-3 flex-wrap">
+            <h2 class="card-title">
+              {{ project.title }}
+            </h2>
+            <div class="flex gap-3 justify-center items-center">
+              <div v-for="tag in project.tags" v-bind:key="tag.title" class="badge badge-accent">{{
+                tag.title }}</div>
+            </div>
           </div>
-          <h2 class="card-title">
-            {{ project.title }}
-          </h2>
           <p>{{ $t(`projects.${project.id}.description`) }}</p>
           <div class="card-actions justify-end">
             <a class="btn btn-primary" :class="{ 'btn-disabled': !project.source }" :href="project.source" target="_blank"
