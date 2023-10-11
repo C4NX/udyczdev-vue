@@ -1,9 +1,3 @@
 {
-  "name": "English",
-  "profile": {
-    "description": "I'm a 19-year-old developer who's been passionate about computers since I was a kid, and I spend a lot of my free time working on projects of all kinds. I mainly program in PHP, JavaScript, TypeScript and C#. I also sometimes work in Python and Lua for tool or game development. After all, I'm passionate about video games and game modding. On a more personal note, I love listening to music while I work. I'm a big fan of « Vocaloid » and « Hyperpop » music, and sometimes I do a bit of music production. I'm currently studying for a Computer Science degree at the University of Reims Champagne-Ardenne, and my goal is to become a web developer in the various languages I master."
-  },
-  "button": {
-    "cv": "MY CURRICULUM VITAE 📜"
-  }
+  "name": "English"
 }
