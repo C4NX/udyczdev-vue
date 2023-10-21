@@ -1,3 +1,19 @@
+<script setup lang="ts">
+import type { MeModel } from '@/models/Me'
+import type { PropType } from 'vue'
+
+import ULinkMenu from './ULinkMenu.vue'
+
+import MarkdownText from '@/components/MarkdownText.vue'
+
+defineProps({
+  data: {
+    type: Object as PropType<MeModel>,
+    required: true
+  }
+})
+</script>
+
 <template>
   <div class="flex flex-col m-10 items-center gap-10 animate-fade animate-once">
     <div class="flex flex-col gap-7">
@@ -32,19 +48,3 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import type { MeModel } from '@/models/Me'
-import type { PropType } from 'vue'
-
-import ULinkMenu from './ULinkMenu.vue'
-
-import MarkdownText from '@/components/MarkdownText.vue'
-
-defineProps({
-  data: {
-    type: Object as PropType<MeModel>,
-    required: true
-  }
-})
-</script>
