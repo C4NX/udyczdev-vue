@@ -1,1 +1,1 @@
-export const ENV_WIP_BANNER = import.meta.env.VITE_WIP_BANNER ?? true;
+export const ENV_WIP_BANNER = Boolean(import.meta.env.VITE_WIP_BANNER) ?? true;
