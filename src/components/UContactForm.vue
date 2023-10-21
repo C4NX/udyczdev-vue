@@ -10,6 +10,7 @@
   </dialog>
   <form class="flex flex-col p-5 gap-5 bg-base-100 w-full mx-5 sm:mx-10 rounded-box" @submit.prevent="() => mailTo(mail)">
     <h3 class="text-2xl font-bold">{{ $t('contact.title') }}</h3>
+    <p>{{ $t('contact.text') }}</p>
     <div class="form-control">
       <label class="input-group">
         <span>{{ $t('contact.subject') }}</span>
@@ -21,11 +22,15 @@
       <textarea class="textarea textarea-primary" :placeholder="$t('contact.placeholder.message')"
         v-model="message"></textarea>
     </div>
-    <button class="btn btn-primary" type="submit">{{ $t('contact.send') }}</button>
+    <button class="btn btn-primary" type="submit">
+      {{ $t('contact.send') }}
+      <OhVueIcon name="ri-mail-send-line" fill="currentColor" />
+    </button>
   </form>
 </template>
 
 <script setup lang="ts">
+import { OhVueIcon } from 'oh-vue-icons';
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 

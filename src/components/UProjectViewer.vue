@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { type Project, type ProjectTag } from '@/models/Project'
+import { OhVueIcon } from 'oh-vue-icons';
 import { ref, watch } from 'vue';
 
 const props = defineProps({
@@ -103,10 +104,12 @@ watch(() => props.data, () => {
             <a class="btn btn-primary" :class="{ 'btn-disabled': !project.source }" :href="project.source" target="_blank"
               rel="noopener noreferrer">
               {{ $t('action.source') }}
+              <OhVueIcon name="ri-github-line" fill="currentColor" />
             </a>
             <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
               :class="{ 'btn-disabled': !project.demo }">
               {{ $t('action.demo') }}
+              <OhVueIcon name="ri-play-line" fill="currentColor" />
             </a>
           </div>
         </div>

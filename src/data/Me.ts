@@ -31,7 +31,7 @@ import {
   skill_windows, 
   skill_linux 
 } from './Skills'
-import { tag_javascript_typescript, tag_gohugo, tag_csharp, tag_devops } from './Tags'
+import { tag_javascript_typescript, tag_gohugo, tag_csharp } from './Tags'
 
 const Me: MeModel = {
   firstName: 'Alexis',
@@ -39,6 +39,9 @@ const Me: MeModel = {
   email: 'udycz.alexis@gmail.com',
   cvUrl: CVPath,
   job: 'Développeur Web FullStack',
+  birthdayDate: new Date(2003, 10, 16),
+  location: 'Reims, France',
+  locationUrl: 'https://maps.app.goo.gl/Xiah48NUZh3aN5JL9',
   avatarUrl: AvatarPath,
   skills: [
     {
@@ -129,6 +132,11 @@ const Me: MeModel = {
       name: 'Blog',
       href: 'https://blog.udycz.dev',
       icon: 'ri-rss-fill'
+    },
+    {
+      "name": "Services",
+      "href": "https://status.udycz.dev",
+      "icon": "ri-server-fill"
     }
   ],
   projects: [
@@ -188,6 +196,11 @@ const Me: MeModel = {
           bannerUrl: 'https://www.iut-rcc.fr/media-images/23796/vueaerienne-iut.jpg',
           url: 'https://www.iut-rcc.fr/'
         },
+      ]
+    },
+    {
+      title: 'Stages & Alternances',
+      works: [
         {
           id: 'stagemarne',
           title: 'Stage Département de la Marne',
@@ -199,15 +212,17 @@ const Me: MeModel = {
         },
         {
           id: 'alternance-credit-agricole-nord-est',
-          title: 'Alternance Crédit Agricole Nord-Est',
-          titleSmall: '[Alternance] CA',
-          year: '2023 - ...',
-          company: 'Crédit Agricole Nord-Est - Reims',
+          title: 'Alternance au Crédit Agricole Nord-Est',
+          titleSmall: '[Alt] Crédit Agricole',
+          year: '2023',
+          company: 'Siège Crédit Agricole Nord-Est - Reims',
+          //TODO: Change banner to internal image
+          bannerUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnordeststartup.fr%2Fwp-content%2Fuploads%2F2017%2F12%2FCANE-2-1200x569.png&f=1&nofb=1&ipt=5452e1173eb4c68403d709d5b4d4d4a7fcf232056a914dec3e1fe55814948ca7&ipo=images",
           status: CompleteState.InProgress,
           url: 'https://www.ca-nord-est.fr'
         }
       ]
-    }
+    },
   ]
 }
 

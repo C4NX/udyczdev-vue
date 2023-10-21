@@ -12,12 +12,23 @@ defineProps({
     t: {
         type: String,
         required: false
+    },
+    td: {
+        type: Object,
+        required: false,
+        default: () => ({})
+    },
+    className: {
+        type: String,
+        required: false,
+        default: ''
     }
 })
 </script>
 
 <template>
-    <div v-html="sanitize(marked(t ? $t(t) : (text ?? ''), { breaks: true, gfm: true }))" class="markdown-text-list" />
+    <div v-html="sanitize(marked(t ? $t(t, td) : (text ?? ''), { breaks: true, gfm: true }))"
+        :class='["markdown-text-list", className]' />
 </template>
 
 <style>
