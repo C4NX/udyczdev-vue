@@ -1,8 +1,6 @@
-
 <script setup lang="ts">
 import { marked } from 'marked'
 import sanitize from 'sanitize-html'
-import { defineProps } from 'vue'
 
 defineProps({
     text: {
