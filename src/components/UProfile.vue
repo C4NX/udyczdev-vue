@@ -42,7 +42,7 @@ defineProps({
       <div class="flex gap-3 justify-between items-center flex-col sm:flex-row">
         <ULinkMenu :entries="data.links" />
         <a class="btn btn-secondary" :href="data.cvUrl" target="_blank" rel="noopener noreferrer">
-          {{ $t('button.cv') }}
+          {{ $t('action.cv') }}
         </a>
       </div>
     </div>

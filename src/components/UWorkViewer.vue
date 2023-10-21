@@ -24,7 +24,7 @@
           <small class="text-center sm:text-end">{{ selectedWork.company }}</small>
         </div>
         <a class="btn btn-primary" :href="selectedWork.url" target="_blank" rel="noopener noreferrer">
-          {{ $t('button.visitwork') }}
+          {{ $t('action.visitwork') }}
         </a>
       </div>
       <p v-else>

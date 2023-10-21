@@ -102,11 +102,11 @@ watch(() => props.data, () => {
           <div class="card-actions justify-end">
             <a class="btn btn-primary" :class="{ 'btn-disabled': !project.source }" :href="project.source" target="_blank"
               rel="noopener noreferrer">
-              {{ $t('button.source') }}
+              {{ $t('action.source') }}
             </a>
             <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
               :class="{ 'btn-disabled': !project.demo }">
-              {{ $t('button.demo') }}
+              {{ $t('action.demo') }}
             </a>
           </div>
         </div>

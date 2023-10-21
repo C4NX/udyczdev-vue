@@ -5,16 +5,13 @@
     "title": "Je suis",
     "job": "Etudiant et Aspirant"
   },
-  "button": {
+  "action": {
     "cv": "MON CURRICULUM VITAE 📜",
     "source": "CODE SOURCE 🔍",
     "demo": "DEMO 🎮",
     "visitwork": "VISITER LE SITE 🌐"
   },
   "projects": {
-    "toolbar": {
-      "tags": "Filtrer par tags :"
-    },
     "portfolio": {
       "description": "Site web de présentation de mes projets et de mes compétences (celui que vous visitez actuellement)."
     },
