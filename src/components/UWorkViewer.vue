@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-base-200 rounded-box p-5 w-4/5 sm:w-2/3 flex flex-col gap-5">
+  <div class="bg-base-200 rounded-box p-5 w-full mx-5 sm:mx-10 flex flex-col gap-5">
     <h3 class="text-2xl font-bold">{{ $t('works.title') }}</h3>
     <div class="flex flex-col sm:flex-row gap-2">
       <ul class="menu bg-base-200 w-56 rounded-box">

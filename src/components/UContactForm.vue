@@ -8,28 +8,18 @@
       </div>
     </form>
   </dialog>
-  <form
-    class="flex flex-col p-5 gap-5 bg-base-100 w-4/5 sm:w-2/3 rounded-box"
-    @submit.prevent="() => mailTo(mail)"
-  >
+  <form class="flex flex-col p-5 gap-5 bg-base-100 w-full mx-5 sm:mx-10 rounded-box" @submit.prevent="() => mailTo(mail)">
     <h3 class="text-2xl font-bold">{{ $t('contact.title') }}</h3>
     <div class="form-control">
       <label class="input-group">
         <span>{{ $t('contact.subject') }}</span>
-        <input
-          type="text"
-          class="input input-bordered w-full"
-          :placeholder="$t('contact.placeholder.subject')"
-          v-model="subject"
-        />
+        <input type="text" class="input input-bordered w-full" :placeholder="$t('contact.placeholder.subject')"
+          v-model="subject" />
       </label>
     </div>
     <div class="form-control">
-      <textarea
-        class="textarea textarea-primary"
-        :placeholder="$t('contact.placeholder.message')"
-        v-model="message"
-      ></textarea>
+      <textarea class="textarea textarea-primary" :placeholder="$t('contact.placeholder.message')"
+        v-model="message"></textarea>
     </div>
     <button class="btn btn-primary" type="submit">{{ $t('contact.send') }}</button>
   </form>
