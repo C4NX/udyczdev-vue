@@ -10,6 +10,9 @@ export interface MeModel {
   avatarUrl: string
   cvUrl: string
   job: string
+  birthdayDate: Date // Dont forget to tell me happy birthday !
+  location: string
+  locationUrl: string
   skills: SkillCategory[]
   links: MenuLink[]
   works: WorkCategory[]

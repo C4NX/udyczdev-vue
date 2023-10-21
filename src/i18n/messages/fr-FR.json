@@ -1,20 +1,18 @@
 {
   "name": "Français",
+  "wip": "Cette page est encore en cours de développement, certaines informations ou fonctionnalités peuvent être manquantes.",
   "profile": {
-    "description": "Jeune développeur **web full stack** de **19 ans**, je suis passionné d'informatique depuis mon plus jeune âge. Je consacre une grande partie de mon temps libre à la réalisation de projets en tout genre, notamment en **PHP, JavaScript, TypeScript et C#**. J'ai également une bonne expérience **en Python et en Lua**, que j'utilise pour des jeux vidéo ou pour du modding.\nÀ titre personnel, j'adore écouter de la musique quand je travaille et j'ai quelques projets avec des Raspberry Pi 4. Je suis également passionné de réalité virtuelle.\nJe suis actuellement étudiant en BUT Informatique à l'Université de Reims Champagne-Ardenne. Mon objectif est de devenir développeur web full stack expérimenté et de travailler sur des projets stimulants.",
+    "description": "**Bonjour, et bienvenue sur mon portfolio** ! Je m'appelle {fullname}, j'ai {yearsOld} ans et je suis étudiant en troisième année de BUT Informatique à *l'Université de Reims Champagne-Ardenne*.\n Passionné par le développement et l'informatique depuis plus de 10 ans, je n'arrête jamais d'apprendre de nouvelles choses.\nEn ce moment je travail par exemple sur : \n- Utilisation et entrainement d'un modèle d'IA\n- Apprentissage du framework Angular\n- Dev-Ops sur un serveur VPS\n\n Alors n'hésitez pas à jeter un œil à mes projets ou à me contacter si vous avez des questions ou des propositions !",
     "title": "Je suis",
-    "job": "Etudiant et Aspirant"
+    "job": "Jeune Alternant"
   },
-  "button": {
+  "action": {
     "cv": "MON CURRICULUM VITAE 📜",
-    "source": "CODE SOURCE 🔍",
-    "demo": "DEMO 🎮",
+    "source": "CODE SOURCE",
+    "demo": "DEMO",
     "visitwork": "VISITER LE SITE 🌐"
   },
   "projects": {
-    "toolbar": {
-      "tags": "Filtrer par tags :"
-    },
     "portfolio": {
       "description": "Site web de présentation de mes projets et de mes compétences (celui que vous visitez actuellement)."
     },
@@ -24,12 +22,13 @@
     "outerwild-coop": {
       "description": "Mod multijoueur pour Outer Wilds, permettant de jouer à plusieurs dans le même univers (il n'est pas très avancé et est aujourd'hui discontinué)."
     },
-    "title": "MES PROJETS 📚"
+    "title": "MES PROJETS 📁"
   },
   "contact": {
     "title": "CONTACTEZ-MOI 📧",
+    "text": "Je ne mort pas, alors n'hésitez pas à me contacter si vous avez des questions ou des propositions !",
     "subject": "Sujet",
-    "send": "ENVOYER 📤",
+    "send": "ENVOYER L'E-MAIL",
     "placeholder": {
       "subject": "Sujet de votre message",
       "message": "Votre message"
@@ -43,12 +42,15 @@
     "title": "LIENS 🔗"
   },
   "works": {
-    "title": "MES EXPÉRIENCES PRO/SCOLAIRES 📚",
+    "title": "MES EXPÉRIENCES PRO/SCOLAIRES 💼",
     "sti2d": {
-      "description": "Baccalauréat STI2D, Option: SIN (Systèmes d'Information et Numérique)."
+      "description": "Baccalauréat STI2D\n- SIN (Systèmes d'Information et Numérique)."
     },
     "butinfo": {
       "description": "Parcours : Réalisation d'applications : concepetions, développement, validation [Option: C#]"
+    },
+    "alternance-credit-agricole-nord-est": {
+      "description": "TODO"
     },
     "stagemarne": {
       "description": "Stage au sein du service informatique du Département de la Marne. J'ai travaillé sur le développement d'une application web API-First Symfony et React (de la conception aux tests). Le but de cette application est d'améliorer le suivi des schémas départementaux au sein du département de la Marne et de créer un outil permettant de les gérer."
@@ -70,6 +72,6 @@
     "empty": "Aucune compétence trouvée"
   },
   "footer": {
-    "text": "Made with ❤ by Udycz Alexis (2023)"
+    "text": "Made with ❤ by {fullname} / {year}"
   }
 }
