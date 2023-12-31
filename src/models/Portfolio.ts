@@ -3,7 +3,11 @@ import type { Project } from './Project'
 import type SkillCategory from './SkillCategory'
 import type WorkCategory from './WorkCategory'
 
-export interface MeModel {
+/**
+ * The base interface for the portfolio.
+ * It contains all the data used by the portfolio.
+ */
+export default interface Portfolio {
   firstName: string
   lastName: string
   email: string

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { MeModel } from '@/models/Me'
+import type Portfolio from '@/models/Portfolio'
 import { computed, type PropType } from 'vue'
 import ULinkMenu from './ULinkMenu.vue'
 import MarkdownText from '@/components/MarkdownText.vue'
@@ -7,7 +7,7 @@ import { OhVueIcon } from 'oh-vue-icons'
 
 const props = defineProps({
   data: {
-    type: Object as PropType<MeModel>,
+    type: Object as PropType<Portfolio>,
     required: true
   }
 })

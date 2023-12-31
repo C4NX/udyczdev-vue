@@ -1,21 +1,18 @@
-import { type ProjectTag } from "@/models/Project"
-
-export const tag_javascript_typescript : ProjectTag = {
+export default {
+  javascript_typescript: {
     id: 'javascript-typescript',
     title: 'JavaScript/TypeScript'
-  }
-  
-  export const tag_gohugo : ProjectTag = {
+  },
+  gohugo: {
     id: 'gohugo',
     title: 'GoHugo'
-  }
-
-  export const tag_devops : ProjectTag = {
+  },
+  devops: {
     id: 'devops',
     title: 'DevOps'
-  }
-  
-  export const tag_csharp : ProjectTag = {
+  },
+  csharp: {
     id: 'csharp',
     title: '.NET/C#'
   }
+}

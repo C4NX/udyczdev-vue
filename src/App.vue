@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import Me from './data/Me'
+import Me from './data/Portfolio'
 import 'floating-vue/dist/style.css'
 import './assets/main.css'
 import MyPortfolio from './components/MyPortfolio.vue'

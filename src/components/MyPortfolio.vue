@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { MeModel } from '@/models/Me'
+import type Portfolio from '../models/Portfolio'
 import USkillsViewer from './USkillsViewer.vue'
 import UContactForm from './UContactForm.vue'
 import UMockupBrowser from './UMockupBrowser.vue'
@@ -10,7 +10,7 @@ import { ENV_WIP_BANNER } from '@/config/env'
 import { OhVueIcon } from 'oh-vue-icons'
 
 defineProps<{
-  data: MeModel
+  data: Portfolio
 }>()
 </script>
 

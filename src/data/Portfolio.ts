@@ -1,38 +1,13 @@
 import { CompleteState } from '@/models/Work'
 import AvatarPath from '../assets/avatar.png'
-import { type MeModel } from '../models/Me'
+import { type Portfolio } from '../models/Portfolio'
 import BlogCoverPath from '../assets/projects/blog.png'
 import PortfolioCoverPath from '../assets/projects/portfolio.png'
 import OuterWildsCoopCoverPath from '../assets/projects/outerwild-coop.png'
-import { 
-  skill_tailwind, 
-  skill_boostrap, 
-  skill_daisyui, 
-  skill_react, 
-  skill_vue, 
-  skill_materialui,
-  skill_symfony, 
-  skill_api_platform, 
-  skill_aspnetcore, 
-  skill_flask, 
-  skill_phpstorm, 
-  skill_vscode, 
-  skill_git, 
-  skill_github, 
-  skill_gitlab, 
-  skill_sqldeveloper, 
-  skill_docker,
-  skill_nginx, 
-  skill_oracledb, 
-  skill_mariadb, 
-  skill_mongodb, 
-  skill_unity, 
-  skill_windows, 
-  skill_linux 
-} from './Skills'
-import { tag_javascript_typescript, tag_gohugo, tag_csharp } from './Tags'
+import skills from './Skills'
+import tags from './Tags'
 
-const Me: MeModel = {
+const Me: Portfolio = {
   firstName: 'Alexis',
   lastName: 'Udycz',
   email: 'udycz.alexis@gmail.com',
@@ -48,9 +23,9 @@ const Me: MeModel = {
       name: 'Frameworks CSS',
       icon: 'ri-css3-fill',
       skills: [
-        skill_tailwind,
-        skill_boostrap,
-        skill_daisyui
+        skills.tailwind,
+        skills.boostrap,
+        skills.daisyui
       ]
     },
     {
@@ -58,19 +33,19 @@ const Me: MeModel = {
       name: 'Frameworks Front',
       icon: 'ri-code-s-fill',
       skills: [
-        skill_react,
-        skill_vue,
-        skill_materialui
+        skills.react,
+        skills.vue,
+        skills.materialui
       ]
     }, {
       id: 'frameworks-back',
       name: 'Frameworks Back',
       icon: 'ri-code-s-fill',
       skills: [
-        skill_symfony,
-        skill_api_platform,
-        skill_aspnetcore,
-        skill_flask
+        skills.symfony,
+        skills.api_platform,
+        skills.aspnetcore,
+        skills.flask
       ]
     },
     {
@@ -78,14 +53,14 @@ const Me: MeModel = {
       name: 'Software',
       icon: 'ri-code-s-fill',
       skills: [
-        skill_phpstorm,
-        skill_vscode,
-        skill_git,
-        skill_github,
-        skill_gitlab,
-        skill_sqldeveloper,
-        skill_docker,
-        skill_nginx
+        skills.phpstorm,
+        skills.vscode,
+        skills.git,
+        skills.github,
+        skills.gitlab,
+        skills.sqldeveloper,
+        skills.docker,
+        skills.nginx
       ]
     },
     {
@@ -93,9 +68,9 @@ const Me: MeModel = {
       name: 'Databases',
       icon: 'ri-database-2-fill',
       skills: [
-        skill_oracledb,
-        skill_mariadb,
-        skill_mongodb
+        skills.oracledb,
+        skills.mariadb,
+        skills.mongodb
       ]
     },
     {
@@ -103,7 +78,7 @@ const Me: MeModel = {
       name: 'Game Engines',
       icon: 'ri-gamepad-fill',
       skills: [
-        skill_unity
+        skills.unity
       ]
     },
     {
@@ -111,8 +86,8 @@ const Me: MeModel = {
       name: 'Operating Systems',
       icon: 'ri-windows-fill',
       skills: [
-        skill_windows,
-        skill_linux
+        skills.windows,
+        skills.linux
       ]
     },
   ],
@@ -145,26 +120,26 @@ const Me: MeModel = {
       source: 'https://github.com/C4NX/udyczdev-vue',
       coverUrl: PortfolioCoverPath,
       demo: 'https://udycz.dev',
-      tags: [tag_javascript_typescript]
+      tags: [tags.javascript_typescript]
     },
     /* {
       id: "homelab",
       title: "HomeLab",
-      tags: [tag_devops],
+      tags: [tags.devops],
     }, */
     {
       id: 'blog',
       title: 'Blog',
       coverUrl: BlogCoverPath,
       demo: 'https://blog.udycz.dev',
-      tags: [tag_gohugo, tag_javascript_typescript]
+      tags: [tags.gohugo, tags.javascript_typescript]
     },
     {
       id: 'outerwild-coop',
       title: 'Outer Wilds Coop',
       coverUrl: OuterWildsCoopCoverPath,
       source: 'https://github.com/C4NX/OuterWildsCoop',
-      tags: [tag_csharp]
+      tags: [tags.csharp]
     }
   ],
   works: [
