@@ -32,7 +32,7 @@ defineProps({
   <dialog class="modal modal-bottom sm:modal-middle" ref="modalElement">
     <form method="dialog" class="modal-box">
       <h3 class="text-lg font-bold">{{ $t('contact.error.title') }}</h3>
-      <p class="py-4">{{ $t(t('contact.error.message')) }}</p>
+      <p class="py-4">{{ $t('contact.error.message') }}</p>
       <div class="modal-action">
         <button class="btn">Close</button>
       </div>
