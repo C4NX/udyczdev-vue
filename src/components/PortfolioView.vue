@@ -8,6 +8,7 @@ import UWorkViewer from './UWorkViewer.vue'
 import UProfile from './UProfile.vue'
 import { ENV_WIP_BANNER } from '@/config/env'
 import { OhVueIcon } from 'oh-vue-icons'
+import { AlertLine } from '@/config/icons'
 
 defineProps<{
   data: Portfolio
@@ -19,7 +20,7 @@ defineProps<{
     <template #default>
       <div class="m-5" v-if="ENV_WIP_BANNER">
         <div class="alert alert-warning">
-          <OhVueIcon name="ri-alert-line" fill="currentColor" />
+          <OhVueIcon :name="AlertLine.name" fill="currentColor" />
           <span><strong>Warning</strong>: {{ $t('wip') }}</span>
         </div>
       </div>

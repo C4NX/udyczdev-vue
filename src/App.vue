@@ -1,17 +1,17 @@
 <template>
   <main class="flex-1">
     <div class="flex flex-col gap-3 justify-center items-center h-full">
-      <MyPortfolio :data="Me" />
+      <PortfolioView :data="Portfolio" />
     </div>
   </main>
   <u-footer />
 </template>
 
 <script setup lang="ts">
-import Me from './data/Portfolio'
+import Portfolio from './data/Portfolio'
 import 'floating-vue/dist/style.css'
 import './assets/main.css'
-import MyPortfolio from './components/MyPortfolio.vue'
+import PortfolioView from './components/PortfolioView.vue'
 import UFooter from './components/UFooter.vue'
 </script>
 

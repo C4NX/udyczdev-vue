@@ -1,3 +1,33 @@
+<script setup lang="ts">
+import { OhVueIcon } from 'oh-vue-icons';
+import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { MailSendLine } from '../config/icons'
+
+const message = ref('')
+const subject = ref('')
+const modalElement = ref<HTMLDialogElement | undefined>()
+
+const { t } = useI18n()
+
+const mailTo = (email: string) => {
+  if (!message.value || !subject.value) {
+    if (modalElement.value) {
+      modalElement.value.showModal()
+    }
+    return
+  }
+  window.open(`mailto:${email}?subject=${subject.value}&body=${message.value}`)
+}
+
+defineProps({
+  mail: {
+    type: String,
+    required: true
+  }
+})
+</script>
+
 <template>
   <dialog class="modal modal-bottom sm:modal-middle" ref="modalElement">
     <form method="dialog" class="modal-box">
@@ -24,36 +54,7 @@
     </div>
     <button class="btn btn-primary" type="submit">
       {{ $t('contact.send') }}
-      <OhVueIcon name="ri-mail-send-line" fill="currentColor" />
+      <OhVueIcon :name="MailSendLine.name" fill="currentColor" />
     </button>
   </form>
 </template>
-
-<script setup lang="ts">
-import { OhVueIcon } from 'oh-vue-icons';
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
-
-const message = ref('')
-const subject = ref('')
-const modalElement = ref<HTMLDialogElement | undefined>()
-
-const { t } = useI18n()
-
-const mailTo = (email: string) => {
-  if (!message.value || !subject.value) {
-    if (modalElement.value) {
-      modalElement.value.showModal()
-    }
-    return
-  }
-  window.open(`mailto:${email}?subject=${subject.value}&body=${message.value}`)
-}
-
-defineProps({
-  mail: {
-    type: String,
-    required: true
-  }
-})
-</script>

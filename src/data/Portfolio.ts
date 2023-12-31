@@ -1,11 +1,13 @@
 import { CompleteState } from '@/models/Work'
 import AvatarPath from '../assets/avatar.png'
-import { type Portfolio } from '../models/Portfolio'
+import type Portfolio from '../models/Portfolio'
 import BlogCoverPath from '../assets/projects/blog.png'
 import PortfolioCoverPath from '../assets/projects/portfolio.png'
 import OuterWildsCoopCoverPath from '../assets/projects/outerwild-coop.png'
 import skills from './Skills'
 import tags from './Tags'
+import { RiRssFill } from 'oh-vue-icons/icons/ri'
+import { Css3Fill, CodeFill, Database2Fill, GamepadFill, WindowsFill, LinkedinFill, GithubFill, ServerFill } from '../config/icons'
 
 const Me: Portfolio = {
   firstName: 'Alexis',
@@ -21,7 +23,7 @@ const Me: Portfolio = {
     {
       id: 'frameworks-css',
       name: 'Frameworks CSS',
-      icon: 'ri-css3-fill',
+      icon: Css3Fill.name,
       skills: [
         skills.tailwind,
         skills.boostrap,
@@ -31,7 +33,7 @@ const Me: Portfolio = {
     {
       id: 'frameworks-front',
       name: 'Frameworks Front',
-      icon: 'ri-code-s-fill',
+      icon: CodeFill.name,
       skills: [
         skills.react,
         skills.vue,
@@ -40,7 +42,7 @@ const Me: Portfolio = {
     }, {
       id: 'frameworks-back',
       name: 'Frameworks Back',
-      icon: 'ri-code-s-fill',
+      icon: ServerFill.name,
       skills: [
         skills.symfony,
         skills.api_platform,
@@ -51,7 +53,7 @@ const Me: Portfolio = {
     {
       id: 'software',
       name: 'Software',
-      icon: 'ri-code-s-fill',
+      icon: CodeFill.name,
       skills: [
         skills.phpstorm,
         skills.vscode,
@@ -66,7 +68,7 @@ const Me: Portfolio = {
     {
       id: 'databases',
       name: 'Databases',
-      icon: 'ri-database-2-fill',
+      icon: Database2Fill.name,
       skills: [
         skills.oracledb,
         skills.mariadb,
@@ -76,7 +78,7 @@ const Me: Portfolio = {
     {
       id: 'game-engines',
       name: 'Game Engines',
-      icon: 'ri-gamepad-fill',
+      icon: GamepadFill.name,
       skills: [
         skills.unity
       ]
@@ -84,7 +86,7 @@ const Me: Portfolio = {
     {
       id: 'os',
       name: 'Operating Systems',
-      icon: 'ri-windows-fill',
+      icon: WindowsFill.name,
       skills: [
         skills.windows,
         skills.linux
@@ -95,22 +97,22 @@ const Me: Portfolio = {
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/alexis-udycz/',
-      icon: 'ri-linkedin-fill'
+      icon: LinkedinFill.name
     },
     {
       name: 'GitHub',
       href: 'https://github.com/C4NX',
-      icon: 'ri-github-fill'
+      icon: GithubFill.name
     },
     {
       name: 'Blog',
       href: 'https://blog.udycz.dev',
-      icon: 'ri-rss-fill'
+      icon: RiRssFill.name
     },
     {
       "name": "Services",
       "href": "https://status.udycz.dev",
-      "icon": "ri-server-fill"
+      "icon": ServerFill.name
     }
   ],
   projects: [
