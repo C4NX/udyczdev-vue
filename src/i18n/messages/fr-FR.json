@@ -19,6 +19,9 @@
     "blog": {
       "description": "Blog personnel, où je partage mes expériences et mes découvertes. Il fonctionne avec GoHugo et est hébergé sur GitHub Pages."
     },
+    "homelab": {
+      "description": "Projet de création d'un HomeLab, c'est-à-dire un ensemble de serveurs et de services hébergés chez soi. Il est actuellement en cours de développement et tourne avec le logiciel Proxmox VC."
+    },
     "outerwild-coop": {
       "description": "Mod multijoueur pour Outer Wilds, permettant de jouer à plusieurs dans le même univers (il est aujourd'hui discontinué)."
     },

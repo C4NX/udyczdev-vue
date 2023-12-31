@@ -137,6 +137,11 @@ const Me: Portfolio = {
       coverUrl: OuterWildsCoopCoverPath,
       source: 'https://github.com/C4NX/OuterWildsCoop',
       tags: [tags.csharp]
+    },
+    {
+      id: 'homelab',
+      title: 'HomeLab',
+      tags: [tags.devops]
     }
   ],
   works: [
