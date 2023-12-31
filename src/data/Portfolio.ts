@@ -12,7 +12,7 @@ import { Css3Fill, CodeFill, Database2Fill, GamepadFill, WindowsFill, LinkedinFi
 const Me: Portfolio = {
   firstName: 'Alexis',
   lastName: 'Udycz',
-  email: 'udycz.alexis@gmail.com',
+  email: 'contact@udycz.dev',
   cvUrl: "files/CV/latest.pdf",
   job: 'Développeur Web FullStack',
   birthdayDate: new Date(2003, 10, 16),
@@ -110,9 +110,9 @@ const Me: Portfolio = {
       icon: RiRssFill.name
     },
     {
-      "name": "Services",
-      "href": "https://status.udycz.dev",
-      "icon": ServerFill.name
+      name: "Services",
+      href: "https://status.udycz.dev",
+      icon: ServerFill.name
     }
   ],
   projects: [
@@ -124,11 +124,6 @@ const Me: Portfolio = {
       demo: 'https://udycz.dev',
       tags: [tags.javascript_typescript]
     },
-    /* {
-      id: "homelab",
-      title: "HomeLab",
-      tags: [tags.devops],
-    }, */
     {
       id: 'blog',
       title: 'Blog',
@@ -192,8 +187,6 @@ const Me: Portfolio = {
           titleSmall: '[Alt] Crédit Agricole',
           year: '2023',
           company: 'Siège Crédit Agricole Nord-Est - Reims',
-          //TODO: Change banner to internal image
-          bannerUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnordeststartup.fr%2Fwp-content%2Fuploads%2F2017%2F12%2FCANE-2-1200x569.png&f=1&nofb=1&ipt=5452e1173eb4c68403d709d5b4d4d4a7fcf232056a914dec3e1fe55814948ca7&ipo=images",
           status: CompleteState.InProgress,
           url: 'https://www.ca-nord-est.fr'
         }
