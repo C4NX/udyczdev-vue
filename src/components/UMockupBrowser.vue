@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="mockup-browser border bg-base-300 max-w-6xl my-2">
+  <div class="sm:mockup-browser border bg-base-300 max-w-6xl sm:my-2">
     <div class="mockup-browser-toolbar !hidden sm:!inline-flex">
       <div class="input select-none text-center">
         {{ title }}
