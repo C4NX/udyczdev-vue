@@ -2,7 +2,7 @@
   "name": "Français",
   "wip": "Cette page est encore en cours de développement, certaines informations ou fonctionnalités peuvent être manquantes.",
   "profile": {
-    "description": "**Bonjour, et bienvenue sur mon portfolio** ! Je m'appelle {fullname}, j'ai {yearsOld} ans et je suis étudiant en troisième année de BUT Informatique à *l'Université de Reims Champagne-Ardenne*.\n Passionné par le développement et l'informatique depuis plus de 10 ans, je n'arrête jamais d'apprendre de nouvelles choses.\nEn ce moment je travail par exemple sur : \n- Utilisation et entrainement d'un modèle d'IA\n- Apprentissage du framework Angular\n- Dev-Ops sur un serveur VPS\n\n Alors n'hésitez pas à jeter un œil à mes projets ou à me contacter si vous avez des questions ou des propositions !",
+    "description": "**Bonjour, et bienvenue sur mon portfolio** ! Je m'appelle {fullname}, j'ai {yearsOld} ans et je suis étudiant en troisième année de BUT Informatique à *l'Université de Reims Champagne-Ardenne*.\n Passionné par le développement et l'informatique depuis plus de 10 ans, je n'arrête jamais d'apprendre de nouvelles choses.\nEn ce moment je travaille par exemple sur : \n- L'utilisation et la conception de modèles d'IA\n- L'apprentissage du framework Angular avec l'environement Supabase\n- La création d'un HomeLab\n\n Alors n'hésitez pas à jeter un œil à mes projets ou à me contacter si vous avez des questions ou des propositions !",
     "title": "Je suis",
     "job": "Jeune Alternant"
   },
@@ -19,14 +19,17 @@
     "blog": {
       "description": "Blog personnel, où je partage mes expériences et mes découvertes. Il fonctionne avec GoHugo et est hébergé sur GitHub Pages."
     },
+    "homelab": {
+      "description": "Projet de création d'un HomeLab, c'est-à-dire un ensemble de serveurs et de services hébergés chez soi. Il est actuellement en cours de développement et tourne avec le logiciel Proxmox VC."
+    },
     "outerwild-coop": {
-      "description": "Mod multijoueur pour Outer Wilds, permettant de jouer à plusieurs dans le même univers (il n'est pas très avancé et est aujourd'hui discontinué)."
+      "description": "Mod multijoueur pour Outer Wilds, permettant de jouer à plusieurs dans le même univers (il est aujourd'hui discontinué)."
     },
     "title": "MES PROJETS 📁"
   },
   "contact": {
     "title": "CONTACTEZ-MOI 📧",
-    "text": "Je ne mort pas, alors n'hésitez pas à me contacter si vous avez des questions ou des propositions !",
+    "text": "N'hésitez pas à me contacter si vous avez des questions ou des propositions !",
     "subject": "Sujet",
     "send": "ENVOYER L'E-MAIL",
     "placeholder": {
@@ -44,16 +47,16 @@
   "works": {
     "title": "MES EXPÉRIENCES PRO/SCOLAIRES 💼",
     "sti2d": {
-      "description": "Baccalauréat STI2D\n- SIN (Systèmes d'Information et Numérique)."
+      "description": "Baccalauréat téchnologique Sciences et technologies de l'industrie et du développement durable\n- Option SIN (Systèmes d'Information et Numérique)."
     },
     "butinfo": {
-      "description": "Parcours : Réalisation d'applications : concepetions, développement, validation [Option: C#]"
+      "description": "**Parcours** : Réalisation d'applications : concepetions, développement, validation\n - Option de deuxième année : C#\n\n**Compétences acquises** : Voir la section « Compétences »"
     },
     "alternance-credit-agricole-nord-est": {
-      "description": "TODO"
+      "description": "**Evolution des compétences** : Angular, TypeScript, NodeJS, Symfony 6, Docker, CI/\n**Mission(s)**:\n- Modernisation d'application PHP\n- Participation à la vie de l'équipe (réunions, etc...)\n\nPour plus d'informations, dans la limite du possible, veuillez me contacter par e-mail."
     },
     "stagemarne": {
-      "description": "Stage au sein du service informatique du Département de la Marne. J'ai travaillé sur le développement d'une application web API-First Symfony et React (de la conception aux tests). Le but de cette application est d'améliorer le suivi des schémas départementaux au sein du département de la Marne et de créer un outil permettant de les gérer."
+      "description": "**Evolution des compétences** : Symfony 6, API-Platform, MariaDB, React, MaterialUI, Conception d'une base de données, Gitlab\n**Mission(s)**:\n- Développement d'une application web API-First Symfony et React (de la conception aux tests) permettant la gestion des dossiers de suivi des schémas départementaux au sein du département de la Marne.\n- Participation à la vie de l'équipe (réunions, événements, etc.)\n- Contact avec les utilisateurs finaux"
     },
     "select": "Veuillez sélectionner une expérience"
   },

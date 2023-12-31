@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import type { MeModel } from '@/models/Me'
+import type Portfolio from '@/models/Portfolio'
 import { computed, type PropType } from 'vue'
 import ULinkMenu from './ULinkMenu.vue'
 import MarkdownText from '@/components/MarkdownText.vue'
 import { OhVueIcon } from 'oh-vue-icons'
+import { MapPin2Line } from '@/config/icons'
 
 const props = defineProps({
   data: {
-    type: Object as PropType<MeModel>,
+    type: Object as PropType<Portfolio>,
     required: true
   }
 })
@@ -42,7 +43,7 @@ const fullname = computed(() => `${props.data.firstName} ${props.data.lastName}`
         <div class="flex gap-2 flex-col">
           <MarkdownText t="profile.description" :td="{ yearsOld, fullname }" class-name="text-justify" />
           <div class="flex flex-nowrap gap-2 content-center">
-            <OhVueIcon name="ri-map-pin-2-line" fill="currentColor" />
+            <OhVueIcon :name="MapPin2Line.name" fill="currentColor" />
             <a :href="data.locationUrl" target="_blank" rel="noopener noreferrer" class="link link-secondary">
               {{ data.location }}
             </a>

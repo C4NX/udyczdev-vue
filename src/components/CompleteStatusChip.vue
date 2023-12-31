@@ -19,18 +19,20 @@
 <script setup lang="ts">
 import { CompleteState } from '@/models/Work'
 import { OhVueIcon } from 'oh-vue-icons'
+import { RadioButtonLine, CheckboxBlankCircleLine, CheckboxCircleLine } from '../config/icons'
 import type { PropType } from 'vue'
+import { RiQuestionFill } from 'oh-vue-icons/icons/ri';
 
 const toIcon = (state: CompleteState) => {
   switch (state) {
     case CompleteState.NotStarted:
-      return 'ri-radio-button-line'
+      return RadioButtonLine.name
     case CompleteState.InProgress:
-      return 'ri-checkbox-blank-circle-line'
+      return CheckboxBlankCircleLine.name
     case CompleteState.Completed:
-      return 'ri-checkbox-circle-line'
+      return CheckboxCircleLine.name
     default:
-      return 'ri-question-fill'
+      return RiQuestionFill.name
   }
 }
 

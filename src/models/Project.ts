@@ -1,3 +1,6 @@
+/**
+ * Represents a project in the portfolio.
+ */
 export interface Project {
   id: string,
   title: string
@@ -7,6 +10,9 @@ export interface Project {
   tags?: ProjectTag[]
 }
 
+/**
+ * Represents a tag for a project.
+ */
 export interface ProjectTag {
   id: string,
   title: string

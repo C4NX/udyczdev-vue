@@ -1,43 +1,19 @@
 import { CompleteState } from '@/models/Work'
 import AvatarPath from '../assets/avatar.png'
-import { type MeModel } from '../models/Me'
-import CVPath from '../assets/docs/CV.pdf'
+import type Portfolio from '../models/Portfolio'
 import BlogCoverPath from '../assets/projects/blog.png'
 import PortfolioCoverPath from '../assets/projects/portfolio.png'
 import OuterWildsCoopCoverPath from '../assets/projects/outerwild-coop.png'
-import { 
-  skill_tailwind, 
-  skill_boostrap, 
-  skill_daisyui, 
-  skill_react, 
-  skill_vue, 
-  skill_materialui,
-  skill_symfony, 
-  skill_api_platform, 
-  skill_aspnetcore, 
-  skill_flask, 
-  skill_phpstorm, 
-  skill_vscode, 
-  skill_git, 
-  skill_github, 
-  skill_gitlab, 
-  skill_sqldeveloper, 
-  skill_docker,
-  skill_nginx, 
-  skill_oracledb, 
-  skill_mariadb, 
-  skill_mongodb, 
-  skill_unity, 
-  skill_windows, 
-  skill_linux 
-} from './Skills'
-import { tag_javascript_typescript, tag_gohugo, tag_csharp } from './Tags'
+import skills from './Skills'
+import tags from './Tags'
+import { RiRssFill } from 'oh-vue-icons/icons/ri'
+import { Css3Fill, CodeFill, Database2Fill, GamepadFill, WindowsFill, LinkedinFill, GithubFill, ServerFill } from '../config/icons'
 
-const Me: MeModel = {
+const Me: Portfolio = {
   firstName: 'Alexis',
   lastName: 'Udycz',
-  email: 'udycz.alexis@gmail.com',
-  cvUrl: CVPath,
+  email: 'contact@udycz.dev',
+  cvUrl: "files/CV/latest.pdf",
   job: 'Développeur Web FullStack',
   birthdayDate: new Date(2003, 10, 16),
   location: 'Reims, France',
@@ -47,73 +23,73 @@ const Me: MeModel = {
     {
       id: 'frameworks-css',
       name: 'Frameworks CSS',
-      icon: 'ri-css3-fill',
+      icon: Css3Fill.name,
       skills: [
-        skill_tailwind,
-        skill_boostrap,
-        skill_daisyui
+        skills.tailwind,
+        skills.boostrap,
+        skills.daisyui
       ]
     },
     {
       id: 'frameworks-front',
       name: 'Frameworks Front',
-      icon: 'ri-code-s-fill',
+      icon: CodeFill.name,
       skills: [
-        skill_react,
-        skill_vue,
-        skill_materialui
+        skills.react,
+        skills.vue,
+        skills.materialui
       ]
     }, {
       id: 'frameworks-back',
       name: 'Frameworks Back',
-      icon: 'ri-code-s-fill',
+      icon: ServerFill.name,
       skills: [
-        skill_symfony,
-        skill_api_platform,
-        skill_aspnetcore,
-        skill_flask
+        skills.symfony,
+        skills.api_platform,
+        skills.aspnetcore,
+        skills.flask
       ]
     },
     {
       id: 'software',
       name: 'Software',
-      icon: 'ri-code-s-fill',
+      icon: CodeFill.name,
       skills: [
-        skill_phpstorm,
-        skill_vscode,
-        skill_git,
-        skill_github,
-        skill_gitlab,
-        skill_sqldeveloper,
-        skill_docker,
-        skill_nginx
+        skills.phpstorm,
+        skills.vscode,
+        skills.git,
+        skills.github,
+        skills.gitlab,
+        skills.sqldeveloper,
+        skills.docker,
+        skills.nginx
       ]
     },
     {
       id: 'databases',
       name: 'Databases',
-      icon: 'ri-database-2-fill',
+      icon: Database2Fill.name,
       skills: [
-        skill_oracledb,
-        skill_mariadb,
-        skill_mongodb
+        skills.oracledb,
+        skills.mariadb,
+        skills.mongodb
       ]
     },
     {
       id: 'game-engines',
       name: 'Game Engines',
-      icon: 'ri-gamepad-fill',
+      icon: GamepadFill.name,
       skills: [
-        skill_unity
+        skills.unity
       ]
     },
     {
       id: 'os',
       name: 'Operating Systems',
-      icon: 'ri-windows-fill',
+      icon: WindowsFill.name,
       skills: [
-        skill_windows,
-        skill_linux
+        skills.windows,
+        skills.linux
       ]
     },
   ],
@@ -121,22 +97,22 @@ const Me: MeModel = {
     {
       name: 'LinkedIn',
       href: 'https://www.linkedin.com/in/alexis-udycz/',
-      icon: 'ri-linkedin-fill'
+      icon: LinkedinFill.name
     },
     {
       name: 'GitHub',
       href: 'https://github.com/C4NX',
-      icon: 'ri-github-fill'
+      icon: GithubFill.name
     },
     {
       name: 'Blog',
       href: 'https://blog.udycz.dev',
-      icon: 'ri-rss-fill'
+      icon: RiRssFill.name
     },
     {
-      "name": "Services",
-      "href": "https://status.udycz.dev",
-      "icon": "ri-server-fill"
+      name: "Services",
+      href: "https://status.udycz.dev",
+      icon: ServerFill.name
     }
   ],
   projects: [
@@ -146,26 +122,26 @@ const Me: MeModel = {
       source: 'https://github.com/C4NX/udyczdev-vue',
       coverUrl: PortfolioCoverPath,
       demo: 'https://udycz.dev',
-      tags: [tag_javascript_typescript]
+      tags: [tags.javascript_typescript]
     },
-    /* {
-      id: "homelab",
-      title: "HomeLab",
-      tags: [tag_devops],
-    }, */
     {
       id: 'blog',
       title: 'Blog',
       coverUrl: BlogCoverPath,
       demo: 'https://blog.udycz.dev',
-      tags: [tag_gohugo, tag_javascript_typescript]
+      tags: [tags.gohugo, tags.javascript_typescript]
     },
     {
       id: 'outerwild-coop',
       title: 'Outer Wilds Coop',
       coverUrl: OuterWildsCoopCoverPath,
       source: 'https://github.com/C4NX/OuterWildsCoop',
-      tags: [tag_csharp]
+      tags: [tags.csharp]
+    },
+    {
+      id: 'homelab',
+      title: 'HomeLab',
+      tags: [tags.devops]
     }
   ],
   works: [
@@ -216,8 +192,6 @@ const Me: MeModel = {
           titleSmall: '[Alt] Crédit Agricole',
           year: '2023',
           company: 'Siège Crédit Agricole Nord-Est - Reims',
-          //TODO: Change banner to internal image
-          bannerUrl: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnordeststartup.fr%2Fwp-content%2Fuploads%2F2017%2F12%2FCANE-2-1200x569.png&f=1&nofb=1&ipt=5452e1173eb4c68403d709d5b4d4d4a7fcf232056a914dec3e1fe55814948ca7&ipo=images",
           status: CompleteState.InProgress,
           url: 'https://www.ca-nord-est.fr'
         }
