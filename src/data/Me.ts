@@ -1,7 +1,6 @@
 import { CompleteState } from '@/models/Work'
 import AvatarPath from '../assets/avatar.png'
 import { type MeModel } from '../models/Me'
-import CVPath from '../assets/docs/CV.pdf'
 import BlogCoverPath from '../assets/projects/blog.png'
 import PortfolioCoverPath from '../assets/projects/portfolio.png'
 import OuterWildsCoopCoverPath from '../assets/projects/outerwild-coop.png'
@@ -37,7 +36,7 @@ const Me: MeModel = {
   firstName: 'Alexis',
   lastName: 'Udycz',
   email: 'udycz.alexis@gmail.com',
-  cvUrl: CVPath,
+  cvUrl: "files/CV/latest.pdf",
   job: 'Développeur Web FullStack',
   birthdayDate: new Date(2003, 10, 16),
   location: 'Reims, France',
