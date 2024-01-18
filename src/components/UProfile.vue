@@ -14,7 +14,7 @@ const props = defineProps({
 })
 
 // 🎉 Yeah my birthday !
-const yearsOld = computed(() => new Date().getFullYear() - props.data.birthdayDate.getFullYear())
+const yearsOld = computed(() => ((new Date().getTime() - props.data.birthdayDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000)).toFixed(0))
 const fullname = computed(() => `${props.data.firstName} ${props.data.lastName}`)
 
 </script>
