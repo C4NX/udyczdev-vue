@@ -12,7 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.19",
     "daisyui": "^3.5.1",
     "floating-vue": "^2.0.0-beta.24",
     "marked": "^7.0.3",
