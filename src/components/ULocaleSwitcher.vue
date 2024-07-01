@@ -1,5 +1,5 @@
 <template>
-  <select v-model="$i18n.locale" class="select">
+  <select v-model="$i18n.locale" class="select select-primary">
     <option v-for="locale in $i18n.availableLocales" :key="`locale-${locale}`" :value="locale">
       {{ i18n.t('name', 1, { locale, default: locale }) }}
     </option>

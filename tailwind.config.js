@@ -17,5 +17,8 @@ export default {
     'badge-neutral',
     'badge-ghost',
   ],
+  daisyui: {
+    themes: ["valentine"]
+  },
   plugins: [daisyui],
 }

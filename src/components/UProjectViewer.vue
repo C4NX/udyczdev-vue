@@ -8,10 +8,10 @@
         {{ $t('projects.toolbar.tags') }}
       </span>
       <div class="flex flex-1 gap-2 flex-wrap">
-        <button v-for="tag in getAllTags()" v-bind:key="tag.title"
-          :class="['badge', getProjectTagColor(tag.color)]" @click="toogleTag(tag)">
+        <a v-for="tag in getAllTags()" v-bind:key="tag.title"
+          :class="['badge text-neutral', getProjectTagColor(tag.color)]" @click="toogleTag(tag)">
           <v-icon :name="`ri-checkbox-${isTagSelected(tag) ? 'circle-fill' : 'blank-circle-fill'}`"></v-icon>
-          {{ tag.title }}</button>
+          {{ tag.title }}</a>
       </div>
     </div>
     <div class="flex flex-wrap justify-center gap-10 pb-5">
