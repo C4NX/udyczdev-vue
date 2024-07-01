@@ -4,7 +4,7 @@
     <div class="flex gap-4 flex-col-reverse sm:flex-row">
       <ul class="menu">
         <li v-for="category in data" v-bind:key="category.id">
-          <a @click.prevent="selectedCategory = category">
+          <a @click.prevent="selectedCategory = category" class="hover:scale-105 transition duration-300">
             <v-icon :name="category.icon" fill="white" />
             {{ $t(`skills.category.${category.id}`) }}
           </a>

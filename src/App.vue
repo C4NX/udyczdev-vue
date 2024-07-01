@@ -11,14 +11,7 @@
       by Udycz Alexis (2023)
     </span>
   </footer> -->
-  <u-footer
-    :source="{
-      name: 'GitHub',
-      href: 'https://github.com/C4NX/udyczdev-vue',
-      icon: 'ri-github-fill'
-    }"
-    :socials="[{ name: 'Twitter', icon: 'ri-twitter-line', href: 'https://twitter.com/NXLEBG' }]"
-  />
+  <u-footer/>
 </template>
 
 <script setup lang="ts">

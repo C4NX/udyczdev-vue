@@ -7,7 +7,7 @@
           <h2 class="menu-title">{{ category.title }}</h2>
           <ul v-for="work in category.works" v-bind:key="work.id">
             <li>
-              <a @click.prevent="selectedWork = work">{{ work.titleSmall ?? work.title }}</a>
+              <a @click.prevent="selectedWork = work" class="hover:scale-105 transition duration-300">{{ work.titleSmall ?? work.title }}</a>
             </li>
           </ul>
         </li>

@@ -15,27 +15,27 @@
       </div>
     </div>
     <div class="flex flex-wrap justify-center gap-10 pb-5">
-      <div v-for="project in projects" v-bind:key="project.id" class="card card-compact w-80 bg-base-100 shadow-xl">
+      <div v-for="project in projects" v-bind:key="project.id" class="card card-compact w-80 bg-base-100 shadow-xl hover:scale-105 transition duration-300">
         <figure v-if="project.coverUrl">
           <img :src="project.coverUrl" :alt="project.title" />
         </figure>
         <div class="card-body">
           <div class="flex justify-evenly">
-            <div v-for="tag in project.tags" v-bind:key="tag.title" :class="['badge', getProjectTagColor(tag.color)]">{{
-              tag.title }}</div>
+        <div v-for="tag in project.tags" v-bind:key="tag.title" :class="['badge', getProjectTagColor(tag.color)]">{{
+          tag.title }}</div>
           </div>
           <h2 class="card-title">
-            {{ project.title }}
+        {{ project.title }}
           </h2>
           <p>{{ $t(`projects.${project.id}.description`) }}</p>
           <div class="card-actions justify-end">
-            <a class="btn btn-primary" :class="{ 'btn-disabled': !project.source }" :href="project.source" target="_blank" rel="noopener noreferrer">
-              {{ $t('button.source') }}
-            </a>
-            <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
-              :class="{ 'btn-disabled': !project.demo }">
-              {{ $t('button.demo') }}
-            </a>
+        <a class="btn btn-primary" :class="{ 'btn-disabled': !project.source }" :href="project.source" target="_blank" rel="noopener noreferrer">
+          {{ $t('button.source') }}
+        </a>
+        <a class="btn btn-secondary" :href="project.demo" target="_blank" rel="noopener noreferrer"
+          :class="{ 'btn-disabled': !project.demo }">
+          {{ $t('button.demo') }}
+        </a>
           </div>
         </div>
       </div>
